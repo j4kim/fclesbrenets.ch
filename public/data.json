@@ -1,0 +1,19 @@
+{
+    "news": [
+      {
+        "id":0,
+        "date":"2019-05-12",
+        "author":"Joaquim Perez",
+        "title":"Prochains événements",
+        "content":"<p>Cet été, le club participera à 3 événements majeurs du village</p><ul><li>Le samedi 29 juin : <a href='https://www.lesbrenets.ch/index.php?id=14090&tx_ttnews%5Btt_news%5D=8793&cHash=804658dc3d47b6f0149953c4a72a7475'>Fête de la Jeunesse 2019</a> - Le FC tiendra un stand cette traditionnelle fête du village.</li><li>Le mercredi 31 juillet 2019 : à l'occasion de la fête nationale, le club s'occupera de vous abreuver. Ça se passe au bord du lac des Brenets et il y aura comme d'habitude un chouette feu d'artifice dès 22h sur le lac.</li><li>Le samedi <strong>17 août</strong> il y aura notre traditionnel <strong>tournoi populaire</strong> à six. Des infos complémentaires suivront.</li>"
+      },{
+        "id":1,
+        "date":"2019-06-21",
+        "author":"Joaquim Perez",
+        "title":"Le sauvetage",
+        "content":"<p>Ce fut une saison difficile pour la première équipe. En effet, à la fin de la saison régulière, nous pointions bon dernier avec un total de 5 points en 22 matchs... Pas un grande saison en résumé 😅</p><p>Autant dire qu'on était mal barrés pour le maintien en 4<sup>ème</sup> ligue, objectif annoncé à la pause hivernale (on n'avait alors qu'un seul point). Il faut l'avouer, un coup de chance nous a permis de croire encore au sauvetage en fin de saison. En raison d'une histoire d'équipe qui se retirent dans les ligues au dessus de nous... todo</p><img src='2-7.png' style='width:100%' />"
+      }
+    ],
+    "infos": [
+    ]
+  }

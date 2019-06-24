@@ -15,6 +15,23 @@
   </div>
 </template>
 
+<script>
+import axios from 'axios'
+export default {
+  data(){
+    return {
+      data:{}
+    }
+  },
+  created(){
+    axios.get('data.json').then(result => {
+      this.data = result.data
+    })
+  }
+}
+</script>
+
+
 <style lang="scss">
 $font-color:#2c3e50;
 $accent-color:lighten(saturate($font-color, 60%),20%);
