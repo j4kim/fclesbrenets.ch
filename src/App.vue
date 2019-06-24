@@ -5,8 +5,10 @@
         <img alt="logo du FCB" src="./assets/logoFCB.svg">
       </a>
     </header>
-    <div id="nav">
-      <router-link to="/">News</router-link> |
+    <div id="nav" @click="kick">
+      <router-link to="/">News</router-link>
+      <footballer ref="footballer" /> ⚽️
+      <footballer style="transform:scale(-1, 1)"/> 
       <router-link to="/infos">Infos</router-link>
     </div>
     <div id="content">
@@ -17,7 +19,10 @@
 
 <script>
 import axios from 'axios'
+import Footballer from '@/components/Footballer.vue'
+
 export default {
+  components: {Footballer},
   data(){
     return {
       data:{}
@@ -27,6 +32,11 @@ export default {
     axios.get('data.json').then(result => {
       this.data = result.data
     })
+  },
+  methods:{
+    kick(){
+      this.$refs.footballer.kick()
+    }
   }
 }
 </script>
