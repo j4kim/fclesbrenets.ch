@@ -5,11 +5,11 @@
         <img alt="logo du FCB" src="./assets/logoFCB.svg">
       </a>
     </header>
-    <div id="nav" @click="kick">
-      <router-link to="/">News</router-link>
-      <footballer ref="footballer" /> ⚽️
-      <footballer style="transform:scale(-1, 1)"/> 
-      <router-link to="/infos">Infos</router-link>
+    <div id="nav">
+      <a @click="goTo('news')">News</a>
+      <footballer ref="footballerL"/> ⚽️
+      <footballer ref="footballerR" :revert="true"/> 
+      <a @click="goTo('infos')">Infos</a>
     </div>
     <div id="content">
       <router-view/>  
@@ -34,8 +34,10 @@ export default {
     })
   },
   methods:{
-    kick(){
-      this.$refs.footballer.kick()
+    goTo(page){
+      var side = page === 'infos' ? 'L' : 'R'
+      this.$refs['footballer'+side].kick()
+      this.$router.push({name:page})
     }
   }
 }
