@@ -5,13 +5,13 @@
         <img alt="logo du FCB" src="./assets/logoFCB.svg">
       </a>
     </header>
-    <div id="nav">
-        <a @click="goTo('news')">News</a>
-        <footballer ref="footballerL"/> ⚽️
-        <footballer ref="footballerR" :revert="true"/> 
-        <a @click="goTo('infos')">Infos</a>
-      </div>
-    <div id="content">
+    <div id="nav" @click="changePage">
+      <span>News</span>
+      <footballer ref="footballer-infos"/> ⚽️
+      <footballer ref="footballer-news" :revert="true"/> 
+      <span>Infos</span>      
+    </div>
+    <div id="content">  
       <router-view/>  
     </div>
   </div>
@@ -34,10 +34,10 @@ export default {
     })
   },
   methods:{
-    goTo(page){
-      var side = page === 'infos' ? 'L' : 'R'
-      this.$refs['footballer'+side].kick()
-      this.$router.push({name:page})
+    changePage(){
+      var name = this.$route.name === 'news' ? 'infos' : 'news'
+      this.$refs['footballer-'+name].kick()
+      this.$router.push({name})
     }
   }
 }
@@ -61,14 +61,8 @@ header{
 }
 #nav {
   padding: 30px;
-  a {
-    font-weight: bold;
-    color: $font-color;
-    text-decoration: none;
-    &.router-link-exact-active {
-      color: $accent-color;
-    }
-  }
+  width: 300px;
+  margin: 0 auto;
 }
 #content{
   border-top: 1px solid $font-color;

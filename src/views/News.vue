@@ -1,5 +1,6 @@
 <template>
   <div class="news">
+    <h1>News</h1>
     <div class="post" v-for="post in $parent.data.news" :key="post.id">
       <h2>{{post.title}}</h2>
       <small>{{post.date}}</small>
