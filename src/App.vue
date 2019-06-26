@@ -8,7 +8,7 @@
     <div id="nav">
       <a @click="goTo('news')">News</a>
       <footballer ref="footballerL"/> ⚽️
-      <footballer ref="footballerR" :revert="true"/> 
+      <footballer ref="footballerR" :revert="true" colorShirt="#d33" colorShorts="black"/> 
       <a @click="goTo('infos')">Infos</a>
     </div>
     <div id="content">
