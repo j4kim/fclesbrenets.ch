@@ -57,7 +57,7 @@ export default {
 		height: 90px;
 	}
     .animate{
-        transform-origin: 40% 54%;
+        transform-origin: 40% 60%;
         animation: kick 1s linear;
     }
 </style>
