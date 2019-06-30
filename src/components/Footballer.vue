@@ -54,7 +54,7 @@ export default {
     }
 
 	svg{
-		height: 90px;
+		height: 80px;
 	}
     .animate{
         transform-origin: 40% 60%;

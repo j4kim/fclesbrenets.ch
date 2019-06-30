@@ -7,7 +7,8 @@
     </header>
     <div id="nav" @click="changePage">
       <span>News</span>
-      <footballer ref="footballer-infos"/> ⚽️
+      <footballer ref="footballer-infos"/>
+      <ball class="ball"/>
       <footballer ref="footballer-news" :revert="true"/> 
       <span>Infos</span>      
     </div>
@@ -20,9 +21,10 @@
 <script>
 import axios from 'axios'
 import Footballer from '@/components/Footballer.vue'
+import Ball from '@/components/Ball.vue'
 
 export default {
-  components: {Footballer},
+  components: {Footballer, Ball},
   data(){
     return {
       data:{}
@@ -63,6 +65,12 @@ header{
   padding: 30px;
   width: 300px;
   margin: 0 auto;
+  display: flex;  
+  justify-content: space-between;
+  align-items: baseline;
+  .ball{
+    flex: 1;
+  }
 }
 #content{
   border-top: 1px solid $font-color;
