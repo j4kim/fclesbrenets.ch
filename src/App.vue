@@ -5,12 +5,16 @@
         <img alt="logo du FCB" src="./assets/logoFCB.svg">
       </a>
     </header>
-    <div id="nav" @click="changePage">
-      <span class="nav-link nav-news">News</span>
-      <footballer ref="footballer-infos"/>
+    <div id="nav">
+      <div @click="changePage('news')">
+        <span class="nav-link nav-news">News</span>
+        <footballer ref="footballer-infos"/>
+      </div>
       <ball class="ball"/>
-      <footballer ref="footballer-news" :revert="true"/> 
-      <span class="nav-link nav-infos">Infos</span>      
+      <div @click="changePage('infos')">
+        <footballer ref="footballer-news" :revert="true"/> 
+        <span class="nav-link nav-infos">Infos</span>      
+      </div>
     </div>
     <div id="content">  
       <router-view/>  
@@ -36,10 +40,11 @@ export default {
     })
   },
   methods:{
-    changePage(){
-      var name = this.$route.name === 'news' ? 'infos' : 'news'
-      this.$refs['footballer-'+name].kick()
-      this.$router.push({name})
+    changePage(name){
+      if(name !== this.$route.name){
+        this.$refs['footballer-'+name].kick()
+        this.$router.push({name})
+      }
     }
   }
 }
@@ -71,15 +76,9 @@ header{
   display: flex;  
   justify-content: space-between;
   align-items: baseline;
+
   .ball{
     flex: 1;
-  }
-}
-#content{
-  border-top: 1px solid $font-color;
-  @media screen and (min-width: 800px) {
-    width: 800px;
-    margin: auto;
   }
 }
 
@@ -88,9 +87,20 @@ header{
   transition: all 1s;
   padding: 0 10px;
   font-size:1.2em;
+  cursor:pointer;
+  user-select: none;
 }
+
 .news .nav-news,
 .infos .nav-infos{
   color: black;
+}
+
+#content{
+  border-top: 1px solid $font-color;
+  @media screen and (min-width: 800px) {
+    width: 800px;
+    margin: auto;
+  }
 }
 </style>
