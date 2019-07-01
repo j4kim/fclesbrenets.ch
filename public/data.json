@@ -1,13 +1,13 @@
 {
     "news": [
       {
-        "id":0,
+        "id":1,
         "date":"2019-05-12",
         "author":"Joaquim Perez",
         "title":"Prochains événements",
         "content":"<p>Cet été, le club participera à 3 événements majeurs du village</p><ul><li>Le samedi 29 juin : <a href='https://www.lesbrenets.ch/index.php?id=14090&tx_ttnews%5Btt_news%5D=8793&cHash=804658dc3d47b6f0149953c4a72a7475'>Fête de la Jeunesse 2019</a> - Le FC tiendra un stand cette traditionnelle fête du village.</li><li>Le mercredi 31 juillet 2019 : à l'occasion de la fête nationale, le club s'occupera de vous abreuver. Ça se passe au bord du lac des Brenets et il y aura comme d'habitude un chouette feu d'artifice dès 22h sur le lac.</li><li>Le samedi <strong>17 août</strong> il y aura notre traditionnel <strong>tournoi populaire</strong> à six. Des infos complémentaires suivront.</li>"
       },{
-        "id":1,
+        "id":2,
         "date":"2019-06-21",
         "author":"Joaquim Perez",
         "title":"Le sauvetage",
@@ -15,5 +15,10 @@
       }
     ],
     "infos": [
+      {
+        "id":1,
+        "title":"Contact",
+        "content":"<p>Football Club Les Brenets<br>Champ Nauger 1<br>2416 Les Brenets</p><p>Emplacement:</p><iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d677.667547778203!2d6.702469829246132!3d47.06479859869707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478defadab0dc367%3A0x6f235bd1bcd93932!2sChamp-Nauger+1%2C+2416+Les+Brenets%2C+Suisse!5e1!3m2!1sfr!2sus!4v1562011917150!5m2!1sfr!2sus\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>"
+      }
     ]
   }

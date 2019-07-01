@@ -55,6 +55,9 @@ $accent-color:lighten(saturate($font-color, 60%),20%);
   -moz-osx-font-smoothing: grayscale;
   color: $font-color;
 }
+h2{
+  margin:0;
+}
 header{
   text-align: center;
   img{

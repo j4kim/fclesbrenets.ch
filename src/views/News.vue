@@ -18,9 +18,6 @@ export default {
 <style lang="scss" scoped>
   .post{
     margin: 30px 0 20px;
-    h2{
-      margin:0;
-    }
   }
 </style>
 
