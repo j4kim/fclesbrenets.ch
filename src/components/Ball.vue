@@ -1,6 +1,6 @@
 <template>
     <div>
-        <span class="ball-icon">⚽</span>
+        <div class="ball-icon">⚽</div>
     </div>
 </template>
 
@@ -10,9 +10,11 @@
     padding-right: 20px;
     .ball-icon{
         position: relative;
-        transition: left 1s .2s;
+        transition: all 1s .2s;
+        width: 20px;
+        height: 20px;
     }
 }
-.news .ball-icon{ left:0; }
-.infos .ball-icon{ left:100%; }
+.news .ball-icon{ left:0; transform:rotate(0deg) }
+.infos .ball-icon{ left:100%; transform:rotate(360deg) }
 </style>
