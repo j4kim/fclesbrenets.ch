@@ -6,11 +6,11 @@
       </a>
     </header>
     <div id="nav" @click="changePage">
-      <span>News</span>
+      <span class="nav-link nav-news">News</span>
       <footballer ref="footballer-infos"/>
       <ball class="ball"/>
       <footballer ref="footballer-news" :revert="true"/> 
-      <span>Infos</span>      
+      <span class="nav-link nav-infos">Infos</span>      
     </div>
     <div id="content">  
       <router-view/>  
@@ -63,7 +63,7 @@ header{
 }
 #nav {
   padding: 30px;
-  width: 300px;
+  width: 340px;
   margin: 0 auto;
   display: flex;  
   justify-content: space-between;
@@ -78,5 +78,16 @@ header{
     width: 800px;
     margin: auto;
   }
+}
+
+.nav-link{
+  color: #bbb;
+  transition: all 1s;
+  padding: 0 10px;
+  font-size:1.2em;
+}
+.news .nav-news,
+.infos .nav-infos{
+  color: black;
 }
 </style>
