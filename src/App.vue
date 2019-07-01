@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" :class="$route.name">
     <header>
       <a href="/">
         <img alt="logo du FCB" src="./assets/logoFCB.svg">
@@ -53,10 +53,10 @@ $accent-color:lighten(saturate($font-color, 60%),20%);
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: $font-color;
 }
 header{
+  text-align: center;
   img{
     height: 160px;
   }
@@ -74,7 +74,6 @@ header{
 }
 #content{
   border-top: 1px solid $font-color;
-  text-align: left;
   @media screen and (min-width: 800px) {
     width: 800px;
     margin: auto;
