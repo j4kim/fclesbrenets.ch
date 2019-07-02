@@ -20,7 +20,7 @@
       <router-view/>  
     </main>
     <footer>
-      
+
     </footer>
   </div>
 </template>
@@ -46,7 +46,7 @@ export default {
     changePage(name){
       if(name !== this.$route.name){
         this.$refs['footballer-'+name].kick()
-        this.$router.push({name})
+        this.$router.replace({name})
       }
     }
   }
