@@ -56,6 +56,8 @@ export default {
 <style lang="scss">
 $font-color:#2c3e50;
 $accent-color:lighten(saturate($font-color, 60%),20%);
+
+* { box-sizing: border-box; }
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -73,7 +75,7 @@ header{
 }
 nav {
   padding: 30px;
-  width: 340px;
+  width: 400px;
   margin: 0 auto;
   display: flex;  
   justify-content: space-between;
@@ -91,6 +93,8 @@ nav {
   font-size:1.2em;
   cursor:pointer;
   user-select: none;
+  display: inline-block;
+  width: 70px;
 }
 
 .news .nav-news,
