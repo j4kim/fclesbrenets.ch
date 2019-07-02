@@ -2,7 +2,7 @@
   <section class="news">
     <h1>News</h1>
     <article v-for="post in $parent.data.news" :key="post.id">
-      <h2>{{post.title}}</h2>
+      <h1>{{post.title}}</h1>
       <small>{{post.date}}</small>
       <div v-html="post.content" />
     </article>

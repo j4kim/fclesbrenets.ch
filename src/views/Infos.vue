@@ -3,7 +3,7 @@
     <h1>Infos</h1>
     <div>
       <article v-for="article in $parent.data.infos" :key="article.id">
-        <h2>{{ article.title }}</h2>
+        <h1>{{ article.title }}</h1>
         <div v-html="article.content" />
       </article>
     </div>
