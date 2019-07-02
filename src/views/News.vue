@@ -1,12 +1,12 @@
 <template>
-  <div class="news">
+  <section class="news">
     <h1>News</h1>
-    <div class="post" v-for="post in $parent.data.news" :key="post.id">
+    <article v-for="post in $parent.data.news" :key="post.id">
       <h2>{{post.title}}</h2>
       <small>{{post.date}}</small>
       <div v-html="post.content" />
-    </div>
-  </div>
+    </article>
+  </section>
 </template>
 
 <script>
@@ -16,7 +16,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .post{
+  article{
     margin: 30px 0 20px;
   }
 </style>

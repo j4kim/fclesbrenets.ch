@@ -1,13 +1,13 @@
 <template>
-  <div class="infos">
+  <section class="infos">
     <h1>Infos</h1>
     <div>
-      <div v-for="article in $parent.data.infos" :key="article.id">
+      <article v-for="article in $parent.data.infos" :key="article.id">
         <h2>{{ article.title }}</h2>
         <div v-html="article.content" />
-      </div>
+      </article>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

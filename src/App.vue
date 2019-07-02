@@ -5,7 +5,7 @@
         <img alt="logo du FCB" src="./assets/logoFCB.svg">
       </a>
     </header>
-    <div id="nav">
+    <nav>
       <div @click="changePage('news')">
         <span class="nav-link nav-news">News</span>
         <footballer ref="footballer-infos"/>
@@ -15,10 +15,13 @@
         <footballer ref="footballer-news" :revert="true"/> 
         <span class="nav-link nav-infos">Infos</span>      
       </div>
-    </div>
-    <div id="content">  
+    </nav>
+    <main>  
       <router-view/>  
-    </div>
+    </main>
+    <footer>
+      
+    </footer>
   </div>
 </template>
 
@@ -50,7 +53,6 @@ export default {
 }
 </script>
 
-
 <style lang="scss">
 $font-color:#2c3e50;
 $accent-color:lighten(saturate($font-color, 60%),20%);
@@ -69,7 +71,7 @@ header{
     height: 160px;
   }
 }
-#nav {
+nav {
   padding: 30px;
   width: 340px;
   margin: 0 auto;
@@ -96,7 +98,7 @@ header{
   color: black;
 }
 
-#content{
+main{
   border-top: 1px solid $font-color;
   @media screen and (min-width: 800px) {
     width: 800px;
