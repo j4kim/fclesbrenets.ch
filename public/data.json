@@ -16,9 +16,31 @@
     ],
     "infos": [
       {
-        "id":1,
+        "title":"À propos",
+        "content":"Le FC Les Brenets est un club de football amateur fondé en 1971.</p><p>Il es actuellement composé de trois équipes : Une première équipe inscrite au championnat ANF de 4<sup>ème</sup> ligue; Une équipe vétérans et une équipe juniors</p><p>Notre club compte actuellement une centaine de membres"
+      },
+      {
         "title":"Contact",
-        "content":"<p>Football Club Les Brenets<br>Champ Nauger 1<br>2416 Les Brenets</p><p>Emplacement:</p><iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d677.667547778203!2d6.702469829246132!3d47.06479859869707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478defadab0dc367%3A0x6f235bd1bcd93932!2sChamp-Nauger+1%2C+2416+Les+Brenets%2C+Suisse!5e1!3m2!1sfr!2sus!4v1562011917150!5m2!1sfr!2sus\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>"
+        "content":"<p>Football Club Les Brenets<br>Champ Nauger 1<br>2416 Les Brenets</p><p>Coordonnées bancaires: <br>IBAN CH24 0076 6000 S351 3799 7</p>"
+      },{
+        "title":"Comité",
+        "content":"<p><b>Président</b><br>Christophe Robert Nicoud<br>email<br>téléphone</p><p><b>Caissier</b></p><p><b>Responsable buvette</b></p><p><b>Entraîneurs</b></p><p><b>Arbitres</b></p>"
+      },{
+        "title":"Location de la buvette",
+        "content":""
+      },{
+        "title":"Première équipe",
+        "content":""
+      },{
+        "title":"Juniors",
+        "content":""
+      },{
+        "title":"Vétérans",
+        "content":""
+      },
+      {
+        "title":"Emplacement",
+        "content":"<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d677.667547778203!2d6.702469829246132!3d47.06479859869707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478defadab0dc367%3A0x6f235bd1bcd93932!2sChamp-Nauger+1%2C+2416+Les+Brenets%2C+Suisse!5e1!3m2!1sfr!2sus!4v1562011917150!5m2!1sfr!2sus\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>"
       }
     ]
   }
