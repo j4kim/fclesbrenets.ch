@@ -16,8 +16,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  article{
-    margin: 30px 0 20px;
-  }
 </style>
 
