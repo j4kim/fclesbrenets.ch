@@ -58,7 +58,10 @@ $font-color:#2c3e50;
 $accent-color:lighten(saturate($font-color, 60%),20%);
 
 * { box-sizing: border-box; }
-#app {
+body,html{
+  margin:0;
+  padding:0;
+  background:floralwhite;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -104,6 +107,8 @@ nav {
 
 main{
   border-top: 1px solid $font-color;
+  padding: 10px;
+  
   @media screen and (min-width: 800px) {
     width: 800px;
     margin: auto;
@@ -111,10 +116,11 @@ main{
 
   article{
     break-inside: avoid;
-    box-shadow: 0 3px 8px transparentize(black, 0.8);
+    box-shadow: 0 3px 8px transparentize(black, 0.95);
     padding:10px;
     margin-bottom:20px;
     transform: translateZ(0);
+    background: white;
     h1{
       margin:0 0 5px;
     }
