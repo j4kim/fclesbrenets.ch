@@ -18,14 +18,16 @@ export default {
 
 <style lang="scss">
   .articles{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 20px;
+    column-width: 300px;
+    column-gap: 20px;
     article{
-      border:1px solid lightblue;
+      break-inside: avoid;
+      box-shadow: 0 3px 8px transparentize(black, 0.8);
       padding:10px;
+      margin-bottom:20px;
+      transform: translateZ(0);
       h1{
-        margin:0;
+        margin:0 0 5px;
       }
     }
   }
