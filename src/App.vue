@@ -10,7 +10,6 @@
       <router-view/>  
     </main>
     <footer>
-
     </footer>
   </div>
 </template>
@@ -23,12 +22,12 @@ export default {
   components: { FootballNav },
   data(){
     return {
-      data:{}
+      content:{}
     }
   },
   created(){
     axios.get('data.json').then(result => {
-      this.data = result.data
+      this.content = result.data
     })
   }
 }
