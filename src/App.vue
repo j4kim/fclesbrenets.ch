@@ -39,6 +39,10 @@ $font-color:#2c3e50;
 $accent-color:lighten(saturate($font-color, 60%),20%);
 
 * { box-sizing: border-box; }
+a{
+  color:$accent-color;
+  text-decoration: none;
+}
 body,html{
   margin:0;
   padding:0;
