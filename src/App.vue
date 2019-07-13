@@ -26,7 +26,7 @@ export default {
     }
   },
   created(){
-    axios.get('data.json').then(result => {
+    axios.get('/data.json').then(result => {
       this.content = result.data
     })
   }
