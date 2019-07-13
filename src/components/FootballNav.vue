@@ -43,29 +43,21 @@ nav {
   .ball{
     flex: 1;
   }
+}
 
-  >div{
-
-    .nav-link{
-      color: #bbb;
-      transition: all 1s;
-      padding: 0 10px;
-      font-size:1.2em;
-      cursor:pointer;
-      user-select: none;
-      display: inline-block;
-      width: 70px;
-    }
-
-    &:hover .nav-link{
-      color:#0c71d6 !important;
-    }
-
-  }
+.nav-link{
+  color: #bbb;
+  transition: all 1s;
+  padding: 0 10px;
+  font-size:1.2em;
+  cursor:pointer;
+  user-select: none;
+  display: inline-block;
+  width: 70px;
 }
 
 .ball-left .nav-news,
 .ball-right .nav-infos{
-  color: black !important;
+  color: black;
 }
 </style>
