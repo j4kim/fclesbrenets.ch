@@ -1,11 +1,11 @@
 <template>
     <nav>
-        <div @click="changePage('news')">
+        <div @click="changePage('news', 'left')">
             <span class="nav-link nav-news">News</span>
             <footballer ref="footballer-infos"/>
         </div>
         <ball class="ball"/>
-        <div @click="changePage('infos')">
+        <div @click="changePage('infos', 'right')">
             <footballer ref="footballer-news" :revert="true"/> 
             <span class="nav-link nav-infos">Infos</span>      
         </div>
@@ -19,9 +19,11 @@ import Ball from '@/components/Ball.vue'
 export default {
   components: {Ball, Footballer},
   methods:{
-    changePage(name){
+    changePage(name, side){
       if(name !== this.$route.name){
-        this.$refs['footballer-'+name].kick()
+        if(side !== this.$route.meta.side){
+          this.$refs['footballer-'+name].kick()
+        }
         this.$router.replace({name})
       }
     }
@@ -43,6 +45,8 @@ nav {
   }
 }
 
+// .page,.post{ nav{ display: none; } }
+
 .nav-link{
   color: #bbb;
   transition: all 1s;
@@ -54,8 +58,8 @@ nav {
   width: 70px;
 }
 
-.news .nav-news,
-.infos .nav-infos{
+.ball-left .nav-news,
+.ball-right .nav-infos{
   color: black;
 }
 </style>

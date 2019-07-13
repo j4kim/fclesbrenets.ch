@@ -15,6 +15,6 @@
         height: 20px;
     }
 }
-.news .ball-icon{ left:0; transform:rotate(0deg) }
-.infos .ball-icon{ left:100%; transform:rotate(360deg) }
+.ball-left .ball-icon { left:0; transform:rotate(0deg) }
+.ball-right .ball-icon { left:100%; transform:rotate(360deg) }
 </style>

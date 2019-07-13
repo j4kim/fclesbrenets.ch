@@ -1,5 +1,5 @@
 <template>
-  <div id="app" :class="$route.name">
+  <div id="app" :class="$route.name + ' ball-' + $route.meta.side">
     <header>
       <a href="/">
         <img alt="logo du FCB" src="./assets/logoFCB.svg">

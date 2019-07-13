@@ -13,22 +13,26 @@ export default new Router({
     {
       path: '/',
       name: 'news',
-      component: News
+      component: News,
+      meta:{side:'left'}
     },
     {
       path: '/news/:id',
       name: 'post',
-      component: Article
+      component: Article,
+      meta:{side:'left'}
     },
     {
       path: '/infos',
       name: 'infos',
-      component: Infos
+      component: Infos,
+      meta:{side:'right'}
     },
     {
       path: '/infos/:slug',
       name: 'page',
-      component: Article
+      component: Article,
+      meta:{side:'right'}
     }
   ]
 })
