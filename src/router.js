@@ -2,7 +2,8 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import News from './views/News.vue'
 import Infos from './views/Infos.vue'
-import Article from './views/Article.vue'
+import Post from './views/Post.vue'
+import Page from './views/Page.vue'
 
 Vue.use(Router)
 
@@ -19,7 +20,7 @@ export default new Router({
     {
       path: '/news/:id',
       name: 'post',
-      component: Article,
+      component: Post,
       meta:{side:'left'}
     },
     {
@@ -31,7 +32,7 @@ export default new Router({
     {
       path: '/infos/:slug',
       name: 'page',
-      component: Article,
+      component: Page,
       meta:{side:'right'}
     }
   ]
