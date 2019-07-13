@@ -67,19 +67,18 @@ body,html{
   -moz-osx-font-smoothing: grayscale;
   color: $font-color;
 }
-h2{
-  margin:0;
+#app{
+  min-width: 280px;
 }
 header{
   text-align: center;
   img{
-    height: 160px;
+    height: 120px;
   }
 }
 nav {
-  padding: 30px;
-  width: 400px;
-  margin: 0 auto;
+  max-width: 400px;
+  margin: 30px auto;
   display: flex;  
   justify-content: space-between;
   align-items: baseline;
@@ -108,11 +107,9 @@ nav {
 main{
   border-top: 1px solid $font-color;
   padding: 10px;
-  
-  @media screen and (min-width: 800px) {
-    width: 800px;
-    margin: auto;
-  }
+  width:100%; 
+  max-width: 800px;
+  margin: auto;
 
   article{
     break-inside: avoid;
