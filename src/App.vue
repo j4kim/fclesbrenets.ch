@@ -5,17 +5,7 @@
         <img alt="logo du FCB" src="./assets/logoFCB.svg">
       </a>
     </header>
-    <nav>
-      <div @click="changePage('news')">
-        <span class="nav-link nav-news">News</span>
-        <footballer ref="footballer-infos"/>
-      </div>
-      <ball class="ball"/>
-      <div @click="changePage('infos')">
-        <footballer ref="footballer-news" :revert="true"/> 
-        <span class="nav-link nav-infos">Infos</span>      
-      </div>
-    </nav>
+    <football-nav/>
     <main>  
       <router-view/>  
     </main>
@@ -27,11 +17,10 @@
 
 <script>
 import axios from 'axios'
-import Footballer from '@/components/Footballer.vue'
-import Ball from '@/components/Ball.vue'
+import FootballNav from '@/components/FootballNav.vue'
 
 export default {
-  components: {Footballer, Ball},
+  components: { FootballNav },
   data(){
     return {
       data:{}
@@ -41,14 +30,6 @@ export default {
     axios.get('data.json').then(result => {
       this.data = result.data
     })
-  },
-  methods:{
-    changePage(name){
-      if(name !== this.$route.name){
-        this.$refs['footballer-'+name].kick()
-        this.$router.replace({name})
-      }
-    }
   }
 }
 </script>
@@ -75,33 +56,6 @@ header{
   img{
     height: 120px;
   }
-}
-nav {
-  max-width: 400px;
-  margin: 30px auto;
-  display: flex;  
-  justify-content: space-between;
-  align-items: baseline;
-
-  .ball{
-    flex: 1;
-  }
-}
-
-.nav-link{
-  color: #bbb;
-  transition: all 1s;
-  padding: 0 10px;
-  font-size:1.2em;
-  cursor:pointer;
-  user-select: none;
-  display: inline-block;
-  width: 70px;
-}
-
-.news .nav-news,
-.infos .nav-infos{
-  color: black;
 }
 
 main{
