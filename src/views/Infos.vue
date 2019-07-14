@@ -2,7 +2,7 @@
   <section class="infos">
     <h1>Infos</h1>
     <div class="articles">
-      <article v-for="article in $parent.content.infos" :key="article.id">
+      <article v-for="article in $parent.infos" :key="article.id">
         <h1><router-link :to="'infos/' + slug(article.title)">{{ article.title }}</router-link ></h1>
         <div v-html="article.content" />
       </article>

@@ -22,12 +22,14 @@ export default {
   components: { FootballNav },
   data(){
     return {
-      content:{}
+      news:[],
+      infos:[]
     }
   },
   created(){
     axios.get('/data.json').then(result => {
-      this.content = result.data
+      this.news = result.data.news
+      this.infos = result.data.infos
     })
   }
 }
