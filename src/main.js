@@ -4,7 +4,6 @@ import router from './router'
 import './registerServiceWorker'
 
 import moment from 'moment'
-import 'moment/locale/fr-ch' 
 moment.locale('fr-ch')
 Vue.mixin({
   methods: {
