@@ -1,17 +1,14 @@
 <template>
-    <div>
-        <router-link to="/">Retour aux news</router-link>
-        <article>
-            <h1>{{ post.title }}</h1>
-            <div v-html="post.content" />
-        </article>
-    </div>
+    <post-or-page :post-or-page="post" back-to="news">
+        Billet publié le {{post.date}} par {{post.author}}
+    </post-or-page>
 </template>
 
 <script>
-import slug from 'slug'
+import PostOrPage from '@/components/PostOrPage'
 
 export default {
+    components:{ PostOrPage },
     computed:{
         post(){
             return this.$parent.news.find(post => {

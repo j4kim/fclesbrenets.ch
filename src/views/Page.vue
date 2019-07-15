@@ -1,17 +1,13 @@
 <template>
-    <div>
-        <router-link to="/infos">Retour aux infos</router-link>
-        <article>
-            <h1>{{ page.title }}</h1>
-            <div v-html="page.content" />
-        </article>
-    </div>
+    <post-or-page :post-or-page="page" back-to="infos" />
 </template>
 
 <script>
 import slug from 'slug'
+import PostOrPage from '@/components/PostOrPage'
 
 export default {
+    components:{ PostOrPage },
     computed:{
         page(){
             return this.$parent.infos.find(page => {
