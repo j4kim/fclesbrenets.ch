@@ -1,8 +1,11 @@
 <template>
-    <article>
-        <h1>{{ post.title }}</h1>
-        <div v-html="post.content" />
-    </article>
+    <div>
+        <router-link to="/">Retour aux news</router-link>
+        <article>
+            <h1>{{ post.title }}</h1>
+            <div v-html="post.content" />
+        </article>
+    </div>
 </template>
 
 <script>

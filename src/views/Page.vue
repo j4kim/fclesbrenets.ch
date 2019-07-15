@@ -1,8 +1,11 @@
 <template>
-    <article>
-        <h1>{{ page.title }}</h1>
-        <div v-html="page.content" />
-    </article>
+    <div>
+        <router-link to="/infos">Retour aux infos</router-link>
+        <article>
+            <h1>{{ page.title }}</h1>
+            <div v-html="page.content" />
+        </article>
+    </div>
 </template>
 
 <script>

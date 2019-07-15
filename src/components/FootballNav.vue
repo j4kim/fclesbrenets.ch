@@ -46,7 +46,7 @@ nav {
 }
 
 .nav-link{
-  color: #bbb;
+  color: transparentize(black, 0.7);
   transition: all 1s;
   padding: 0 10px;
   font-size:1.2em;
