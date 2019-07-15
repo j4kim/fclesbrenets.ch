@@ -1,6 +1,6 @@
 <template>
     <post-or-page :post-or-page="post" back-to="news">
-        Billet publié le {{post.date}} par {{post.author}}
+        Billet publié le {{ getDate(post.date, 'LL') }} par {{post.author}}
     </post-or-page>
 </template>
 
