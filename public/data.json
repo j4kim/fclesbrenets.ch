@@ -5,13 +5,13 @@
         "date":"2019-05-12",
         "author":"Joaquim Perez",
         "title":"Prochains événements",
-        "content":"<p>Cet été, le club participera à 3 événements majeurs du village</p><ul><li>Le samedi 29 juin : <a href='https://www.lesbrenets.ch/index.php?id=14090&tx_ttnews%5Btt_news%5D=8793&cHash=804658dc3d47b6f0149953c4a72a7475'>Fête de la Jeunesse 2019</a> - Le FC tiendra un stand cette traditionnelle fête du village.</li><li>Le mercredi 31 juillet 2019 : à l'occasion de la fête nationale, le club s'occupera de vous abreuver. Ça se passe au bord du lac des Brenets et il y aura comme d'habitude un chouette feu d'artifice dès 22h sur le lac.</li><li>Le samedi <strong>17 août</strong> il y aura notre traditionnel <strong>tournoi populaire</strong> à six. Des infos complémentaires suivront.</li>"
+        "content":"<p>Cet été, le club participera à 3 événements majeurs du village</p><ul><li>Le samedi 29 juin : <a target='_blank' href='https://www.lesbrenets.ch/index.php?id=14090&tx_ttnews%5Btt_news%5D=8793&cHash=804658dc3d47b6f0149953c4a72a7475'>Fête de la Jeunesse 2019</a> - Le FC tiendra un stand à la traditionnelle fête du village.</li><li>Le mercredi 31 juillet 2019 : à l'occasion de la fête nationale, le club s'occupera de vous abreuver. Ça se passe au bord du lac des Brenets et il y aura comme d'habitude un chouette feu d'artifice dès 22h sur le lac.</li><li>Le samedi <strong>17 août</strong> il y aura notre traditionnel <strong>tournoi populaire</strong> à six. Des infos complémentaires suivront.</li>"
       },{
         "id":2,
         "date":"2019-06-21",
         "author":"Joaquim Perez",
         "title":"Le sauvetage",
-        "content":"<p>Ce fut une saison difficile pour la première équipe. En effet, à la fin de la saison régulière, nous pointions bon dernier avec un total de 5 points en 22 matchs... Pas un grande saison en résumé 😅</p><p>Autant dire qu'on était mal barrés pour le maintien en 4<sup>ème</sup> ligue, objectif annoncé à la pause hivernale (on n'avait alors qu'un seul point). Il faut l'avouer, un coup de chance nous a permis de croire encore au sauvetage en fin de saison. En raison d'une histoire d'équipe qui se retirent dans les ligues au dessus de nous... todo</p><img src='2-7.png' style='width:100%' />"
+        "content":"<p>Ce fut une saison difficile pour la première équipe. En effet, à la fin de la saison régulière, nous pointions bon dernier avec un total de 5 points en 22 matchs... Pas un grande saison en résumé 😅</p><p>Autant dire qu'on était mal barrés pour le maintien en 4<sup>ème</sup> ligue, objectif annoncé à la pause hivernale (on n'avait alors qu'un seul point). Il faut l'avouer, un coup de chance nous a permis de croire encore au sauvetage en fin de saison: En effet, en raison d'un retrait d'équipe dans une ligue supérieure, l'ANF n'a fait décendre que deux équipes de 4ème ligue pour trois groupes. C'est ainsi que nous avons joué la relégation en 5<sup>ème</sup> lors d'un match de barrage contre la deuxième équipe de Peseux-Comète.</p><img src='/2-7.png' style='max-width:100%' /><p>C'était juste, mais la première s'est sauvée et disputera la saison 2019-2020 en 4<sup>ème</sup> ligue !</p>"
       }
     ],
     "infos": [
@@ -26,14 +26,11 @@
         "title":"Comité",
         "content":"<p><b>Président</b><br>Christophe Robert Nicoud<br>email<br>téléphone</p><p><b>Caissier</b></p><p><b>Responsable buvette</b></p><p><b>Entraîneurs</b></p><p><b>Arbitres</b></p>"
       },{
-        "title":"Location de la buvette",
-        "content":""
-      },{
         "title":"Première équipe",
-        "content":""
+        "content":"<a href='https://www.football.ch/anf/Association-neuchateloise-de-football/Competition-ANF/Championnat-ANF.aspx/oid-15/s-2020/ln-13030/ls-18535/sg-54074/a-mrr/' target='_blank'>Résultats et classement du groupe 1 de 4ème ligue ANF</a>"
       },{
         "title":"Juniors",
-        "content":""
+        "content":"<a href='https://www.football.ch/anf/Association-neuchateloise-de-football/Clubs-ANF/Club-ANF.aspx/v-907/t-34042/ls-18545/sg-54096/a-pt/' target='_blank'>Calendrier de l'équipe Juniors D</a>"
       },{
         "title":"Vétérans",
         "content":""
@@ -41,6 +38,9 @@
       {
         "title":"Emplacement",
         "content":"<iframe style=\"width: 100%;height: 250px\" src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d677.667547778203!2d6.702469829246132!3d47.06479859869707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478defadab0dc367%3A0x6f235bd1bcd93932!2sChamp-Nauger+1%2C+2416+Les+Brenets%2C+Suisse!5e1!3m2!1sfr!2sus!4v1562011917150!5m2!1sfr!2sus\" frameborder=\"0\" style=\"border:0\" allowfullscreen></iframe>"
+      },{
+        "title":"Location de la buvette",
+        "content":"<p>La buvette est située juste à côté de la salle de sports et juste en dessus du terrain principal. Elle peut être utilisée pour organiser des réunions, des soupers ou encore pour fêter les anniversaires de vos proches. La buvette est à disposition de chacun et il est possible de la louer sauf lors des matchs à domicile ou lors des manifestations.</p><img src='/buvette2.jpg' style='max-width:100%' /><p>Nombre de places : max. 40<br>Coin cuisine et vaisselle à disposition<br>  Tarifs : CHF 100.-- </p><p>Pour plus d'informations, prendre contact avec José Decrauzat au 079/625.2000 ou par email jose.decrauzat@axa.ch</p>"
       }
     ]
   }
