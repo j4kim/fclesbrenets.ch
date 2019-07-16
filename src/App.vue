@@ -27,7 +27,7 @@ export default {
     }
   },
   created(){
-    axios.get('/data.json').then(result => {
+    axios.get(process.env.VUE_APP_PATH + 'data.json').then(result => {
       this.news = result.data.news
       this.infos = result.data.infos
     })
