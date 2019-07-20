@@ -1,5 +1,5 @@
 <template>
-    <svg :style="revert ? {transform:'scale(-1, 1)'} : {}" viewBox="0 0 62 85">
+    <svg class="footballer" :style="revert ? {transform:'scale(-1, 1)'} : {}" viewBox="0 0 62 85">
         <g id="jambe" :class="animate ? 'animate' : ''">
             <rect x="21.655" y="48.15" :fill="colorShirt" width="6" height="36"/>
             <rect x="20.655" y="46.15" :fill="colorShorts" width="10" height="19"/>
@@ -53,9 +53,12 @@ export default {
         100% {transform: rotate(0);}
     }
 
-	svg{
-		height: 80px;
-	}
+    .footballer{
+        height: 80px;
+        /* IE compatibility */
+        width: 58.34px;
+    }
+
     .animate{
         transform-origin: 40% 60%;
         animation: kick 1s linear;
