@@ -4,8 +4,8 @@
             Retour aux {{backTo}}
         </router-link>
         <article>
-            <h1>{{ postOrPage.title }}</h1>
-            <div v-html="postOrPage.content" />
+            <h1>{{ postOrPage.title.rendered }}</h1>
+            <div v-html="postOrPage.content.rendered" />
         </article>
         <slot></slot>
     </div>

@@ -3,7 +3,6 @@
 </template>
 
 <script>
-import slug from 'slug'
 import PostOrPage from '@/components/PostOrPage'
 
 export default {
@@ -11,7 +10,7 @@ export default {
     computed:{
         page(){
             return this.$parent.infos.find(page => {
-                return slug(page.title) === this.$route.params.slug
+                return page.slug === this.$route.params.slug
             }) || {} // to avoid errors in console when data is not fetched yet
         }
     }

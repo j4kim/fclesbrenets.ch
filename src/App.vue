@@ -27,9 +27,11 @@ export default {
     }
   },
   created(){
-    axios.get(process.env.VUE_APP_PATH + 'data.json').then(result => {
-      this.news = result.data.news
-      this.infos = result.data.infos
+    axios.get(process.env.VUE_APP_API + 'posts').then(result => {
+      this.news = result.data
+    })
+    axios.get(process.env.VUE_APP_API + 'pages').then(result => {
+      this.infos = result.data
     })
   }
 }
@@ -75,12 +77,15 @@ main{
   article{
     break-inside: avoid;
     box-shadow: 0 3px 8px transparentize(black, 0.95);
-    padding:10px;
+    padding:15px;
     margin-bottom:20px;
     transform: translateZ(0);
     background: white;
     h1{
       margin:0 0 5px;
+    }
+    img{
+      max-width: 100%;
     }
   }
 }
