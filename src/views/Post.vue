@@ -5,13 +5,15 @@
 </template>
 
 <script>
+import dataLoader from './data-loader-mixin'
 import PostOrPage from '@/components/PostOrPage'
 
 export default {
     components:{ PostOrPage },
+    mixins: [dataLoader],
     computed:{
         post(){
-            return this.$parent.news.find(post => {
+            return this.news.find(post => {
                 return post.id == this.$route.params.id
             }) || {} // to avoid errors in console when data is not fetched yet
         }

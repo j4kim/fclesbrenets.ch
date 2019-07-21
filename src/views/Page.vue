@@ -3,13 +3,15 @@
 </template>
 
 <script>
+import dataLoader from './data-loader-mixin'
 import PostOrPage from '@/components/PostOrPage'
 
 export default {
     components:{ PostOrPage },
+    mixins: [dataLoader],
     computed:{
         page(){
-            return this.$parent.infos.find(page => {
+            return this.infos.find(page => {
                 return page.slug === this.$route.params.slug
             }) || {} // to avoid errors in console when data is not fetched yet
         }
