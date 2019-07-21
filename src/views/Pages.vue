@@ -2,7 +2,7 @@
   <section class="pages">
     <h1>Infos</h1>
     <div class="articles">
-      <article v-for="article in $root.pages" :key="article.id">
+      <article v-for="article in orderedPages" :key="article.id">
         <h1><router-link :to="'infos/' + article.slug">{{ article.title.rendered }}</router-link ></h1>
         <div v-html="article.content.rendered" />
       </article>
@@ -11,8 +11,15 @@
 </template>
 
 <script>
+import { sortBy } from 'lodash'
+
 export default {
-  name: 'pages'
+  name: 'pages',
+  computed:{
+    orderedPages(){
+      return sortBy(this.$root.pages, 'menu_order')
+    }
+  }
 }
 </script>
 
