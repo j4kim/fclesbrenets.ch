@@ -15,11 +15,7 @@ Vue.mixin({
 
 Vue.config.productionTip = false
 
-var data = {
-    posts: [],
-    pages: [],
-    users: []
-}
+var data = { posts:[], pages:[], users:[] }
 
 function fetchIfNeeded(resource){
     if(data[resource].length === 0){
