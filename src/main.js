@@ -22,9 +22,11 @@ var data = {
 
 router.beforeEach((to, from, next) => {
     var source = to.meta.side === 'left' ? 'posts' : 'pages'
-    axios.get(process.env.VUE_APP_API + source).then(result => {
-        data[source] = result.data
-    })
+    if(data[source].length === 0){
+        axios.get(process.env.VUE_APP_API + source).then(result => {
+            data[source] = result.data
+        })
+    }
     next()
 })
 
