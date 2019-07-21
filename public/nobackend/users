@@ -1,0 +1,28 @@
+[
+    {
+        "id": 1,
+        "name": "Joaquim",
+        "url": "",
+        "description": "",
+        "link": "http:\/\/localhost\/fcb\/wordpress\/author\/joaquim\/",
+        "slug": "joaquim",
+        "avatar_urls": {
+            "24": "http:\/\/0.gravatar.com\/avatar\/97df6b09714e334073ee661f4ec75bce?s=24&d=mm&r=g",
+            "48": "http:\/\/0.gravatar.com\/avatar\/97df6b09714e334073ee661f4ec75bce?s=48&d=mm&r=g",
+            "96": "http:\/\/0.gravatar.com\/avatar\/97df6b09714e334073ee661f4ec75bce?s=96&d=mm&r=g"
+        },
+        "meta": [],
+        "_links": {
+            "self": [
+                {
+                    "href": "http:\/\/localhost\/fcb\/wordpress\/wp-json\/wp\/v2\/users\/1"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "http:\/\/localhost\/fcb\/wordpress\/wp-json\/wp\/v2\/users"
+                }
+            ]
+        }
+    }
+]

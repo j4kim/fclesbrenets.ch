@@ -15,23 +15,10 @@
 </template>
 
 <script>
-import axios from 'axios'
 import FootballNav from '@/components/FootballNav.vue'
 
 export default {
-  components: { FootballNav },
-  data(){
-    return {
-      news:[],
-      infos:[]
-    }
-  },
-  created(){
-    axios.get(process.env.VUE_APP_PATH + 'data.json').then(result => {
-      this.news = result.data.news
-      this.infos = result.data.infos
-    })
-  }
+  components: { FootballNav }
 }
 </script>
 
@@ -75,12 +62,15 @@ main{
   article{
     break-inside: avoid;
     box-shadow: 0 3px 8px transparentize(black, 0.95);
-    padding:10px;
+    padding:15px;
     margin-bottom:20px;
     transform: translateZ(0);
     background: white;
     h1{
       margin:0 0 5px;
+    }
+    img{
+      max-width: 100%;
     }
   }
 }

@@ -1,17 +1,16 @@
 <template>
-    <post-or-page :post-or-page="page" back-to="infos" />
+    <post-or-page :post-or-page="page" back-to="pages" />
 </template>
 
 <script>
-import slug from 'slug'
 import PostOrPage from '@/components/PostOrPage'
 
 export default {
     components:{ PostOrPage },
     computed:{
         page(){
-            return this.$parent.infos.find(page => {
-                return slug(page.title) === this.$route.params.slug
+            return this.$root.pages.find(page => {
+                return page.slug === this.$route.params.slug
             }) || {} // to avoid errors in console when data is not fetched yet
         }
     }

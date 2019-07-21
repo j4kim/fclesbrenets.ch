@@ -1,6 +1,6 @@
 <template>
-    <post-or-page :post-or-page="post" back-to="news">
-        Billet publié le {{ getDate(post.date, 'LL') }} par {{post.author}}
+    <post-or-page :post-or-page="post" back-to="posts">
+        Billet publié le {{ getDate(post.date, 'LL') }} par {{ author.name }}
     </post-or-page>
 </template>
 
@@ -11,9 +11,12 @@ export default {
     components:{ PostOrPage },
     computed:{
         post(){
-            return this.$parent.news.find(post => {
+            return this.$root.posts.find(post => {
                 return post.id == this.$route.params.id
             }) || {} // to avoid errors in console when data is not fetched yet
+        },
+        author(){
+            return this.$root.users.find(u => u.id == this.post.author) || {}
         }
     }
 }

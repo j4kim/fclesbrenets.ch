@@ -1,0 +1,260 @@
+[
+    {
+        "id": 18,
+        "date": "2019-07-20T17:06:39",
+        "date_gmt": "2019-07-20T15:06:39",
+        "guid": {
+            "rendered": "http:\/\/localhost\/wordpress\/?page_id=18"
+        },
+        "modified": "2019-07-20T17:06:39",
+        "modified_gmt": "2019-07-20T15:06:39",
+        "slug": "emplacement",
+        "status": "publish",
+        "type": "page",
+        "link": "http:\/\/localhost\/fcb\/wordpress\/emplacement\/",
+        "title": {
+            "rendered": "Emplacement"
+        },
+        "content": {
+            "rendered": "\n<iframe style=\"width: 100%;height: 250px\" src=\"https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d677.667547778203!2d6.702469829246132!3d47.06479859869707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478defadab0dc367%3A0x6f235bd1bcd93932!2sChamp-Nauger+1%2C+2416+Les+Brenets%2C+Suisse!5e1!3m2!1sfr!2sus!4v1562011917150!5m2!1sfr!2sus\" frameborder=\"0\" style=\"border:0\" allowfullscreen><\/iframe>\n\n\n\n<p><\/p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "",
+            "protected": false
+        },
+        "author": 1,
+        "featured_media": 0,
+        "parent": 0,
+        "menu_order": 0,
+        "comment_status": "closed",
+        "ping_status": "closed",
+        "template": "",
+        "meta": [],
+        "_links": {
+            "self": [
+                {
+                    "href": "http:\/\/localhost\/fcb\/wordpress\/wp-json\/wp\/v2\/pages\/18"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "http:\/\/localhost\/fcb\/wordpress\/wp-json\/wp\/v2\/pages"
+                }
+            ],
+            "about": [
+                {
+                    "href": "http:\/\/localhost\/fcb\/wordpress\/wp-json\/wp\/v2\/types\/page"
+                }
+            ],
+            "author": [
+                {
+                    "embeddable": true,
+                    "href": "http:\/\/localhost\/fcb\/wordpress\/wp-json\/wp\/v2\/users\/1"
+                }
+            ],
+            "replies": [
+                {
+                    "embeddable": true,
+                    "href": "http:\/\/localhost\/fcb\/wordpress\/wp-json\/wp\/v2\/comments?post=18"
+                }
+            ],
+            "version-history": [
+                {
+                    "count": 1,
+                    "href": "http:\/\/localhost\/fcb\/wordpress\/wp-json\/wp\/v2\/pages\/18\/revisions"
+                }
+            ],
+            "predecessor-version": [
+                {
+                    "id": 19,
+                    "href": "http:\/\/localhost\/fcb\/wordpress\/wp-json\/wp\/v2\/pages\/18\/revisions\/19"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "http:\/\/localhost\/fcb\/wordpress\/wp-json\/wp\/v2\/media?parent=18"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https:\/\/api.w.org\/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 15,
+        "date": "2019-07-20T17:05:08",
+        "date_gmt": "2019-07-20T15:05:08",
+        "guid": {
+            "rendered": "http:\/\/localhost\/wordpress\/?page_id=15"
+        },
+        "modified": "2019-07-20T17:32:20",
+        "modified_gmt": "2019-07-20T15:32:20",
+        "slug": "location-de-la-buvette",
+        "status": "publish",
+        "type": "page",
+        "link": "http:\/\/localhost\/fcb\/wordpress\/location-de-la-buvette\/",
+        "title": {
+            "rendered": "Location de la buvette"
+        },
+        "content": {
+            "rendered": "\n<p>La buvette est situ\u00e9e juste \u00e0 c\u00f4t\u00e9 de la salle de sports et juste en dessus du terrain principal. Elle peut \u00eatre utilis\u00e9e pour organiser des r\u00e9unions, des soupers ou encore pour f\u00eater les anniversaires de vos proches. La buvette est \u00e0 disposition de chacun et il est possible de la louer sauf lors des matchs \u00e0 domicile ou lors des manifestations.<\/p>\n\n\n\n<img src=\"http:\/\/localhost\/wordpress\/wp-content\/uploads\/2019\/07\/buvette2.jpg\" alt=\"\" data-id=\"16\" data-link=\"http:\/\/localhost\/wordpress\/?attachment_id=16\" class=\"wp-image-16\" srcset=\"http:\/\/localhost\/fcb\/wordpress\/wp-content\/uploads\/2019\/07\/buvette2.jpg 400w, http:\/\/localhost\/fcb\/wordpress\/wp-content\/uploads\/2019\/07\/buvette2-300x225.jpg 300w\" sizes=\"(max-width: 400px) 100vw, 400px\" \/>\n\n\n\n<p>Nombre de places : max. 40<br>Coin cuisine et vaisselle \u00e0 disposition<br>Tarifs : CHF 100.&#8211;<\/p>\n\n\n\n<p>Pour plus d&rsquo;informations, prendre contact avec Jos\u00e9 Decrauzat au 079\/625.2000 ou par email jose.decrauzat@axa.ch<\/p>\n\n\n\n<p>coucou c&rsquo;est moi Jojo<\/p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>La buvette est situ\u00e9e juste \u00e0 c\u00f4t\u00e9 de la salle de sports et juste en dessus du terrain principal. Elle peut \u00eatre utilis\u00e9e pour organiser des r\u00e9unions, des soupers ou encore pour f\u00eater les anniversaires de vos proches. La buvette est \u00e0 disposition de chacun et il est possible de la louer sauf lors des [&hellip;]<\/p>\n",
+            "protected": false
+        },
+        "author": 1,
+        "featured_media": 0,
+        "parent": 0,
+        "menu_order": 0,
+        "comment_status": "closed",
+        "ping_status": "closed",
+        "template": "",
+        "meta": [],
+        "_links": {
+            "self": [
+                {
+                    "href": "http:\/\/localhost\/fcb\/wordpress\/wp-json\/wp\/v2\/pages\/15"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "http:\/\/localhost\/fcb\/wordpress\/wp-json\/wp\/v2\/pages"
+                }
+            ],
+            "about": [
+                {
+                    "href": "http:\/\/localhost\/fcb\/wordpress\/wp-json\/wp\/v2\/types\/page"
+                }
+            ],
+            "author": [
+                {
+                    "embeddable": true,
+                    "href": "http:\/\/localhost\/fcb\/wordpress\/wp-json\/wp\/v2\/users\/1"
+                }
+            ],
+            "replies": [
+                {
+                    "embeddable": true,
+                    "href": "http:\/\/localhost\/fcb\/wordpress\/wp-json\/wp\/v2\/comments?post=15"
+                }
+            ],
+            "version-history": [
+                {
+                    "count": 4,
+                    "href": "http:\/\/localhost\/fcb\/wordpress\/wp-json\/wp\/v2\/pages\/15\/revisions"
+                }
+            ],
+            "predecessor-version": [
+                {
+                    "id": 23,
+                    "href": "http:\/\/localhost\/fcb\/wordpress\/wp-json\/wp\/v2\/pages\/15\/revisions\/23"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "http:\/\/localhost\/fcb\/wordpress\/wp-json\/wp\/v2\/media?parent=15"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https:\/\/api.w.org\/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 13,
+        "date": "2019-07-20T17:04:03",
+        "date_gmt": "2019-07-20T15:04:03",
+        "guid": {
+            "rendered": "http:\/\/localhost\/wordpress\/?page_id=13"
+        },
+        "modified": "2019-07-20T17:04:03",
+        "modified_gmt": "2019-07-20T15:04:03",
+        "slug": "a-propos",
+        "status": "publish",
+        "type": "page",
+        "link": "http:\/\/localhost\/fcb\/wordpress\/a-propos\/",
+        "title": {
+            "rendered": "\u00c0 propos"
+        },
+        "content": {
+            "rendered": "\n<p>Le FC Les Brenets est un club de football amateur fond\u00e9 en 1971.<\/p>\n\n\n\n<p>Il es actuellement compos\u00e9 de trois \u00e9quipes : Une premi\u00e8re \u00e9quipe inscrite au championnat ANF de 4<sup>\u00e8me<\/sup> ligue; Une \u00e9quipe v\u00e9t\u00e9rans et une \u00e9quipe juniors<\/p>\n\n\n\n<p>Notre club compte actuellement une centaine de membres<\/p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>Le FC Les Brenets est un club de football amateur fond\u00e9 en 1971. Il es actuellement compos\u00e9 de trois \u00e9quipes : Une premi\u00e8re \u00e9quipe inscrite au championnat ANF de 4\u00e8me ligue; Une \u00e9quipe v\u00e9t\u00e9rans et une \u00e9quipe juniors Notre club compte actuellement une centaine de membres<\/p>\n",
+            "protected": false
+        },
+        "author": 1,
+        "featured_media": 0,
+        "parent": 0,
+        "menu_order": 0,
+        "comment_status": "closed",
+        "ping_status": "closed",
+        "template": "",
+        "meta": [],
+        "_links": {
+            "self": [
+                {
+                    "href": "http:\/\/localhost\/fcb\/wordpress\/wp-json\/wp\/v2\/pages\/13"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "http:\/\/localhost\/fcb\/wordpress\/wp-json\/wp\/v2\/pages"
+                }
+            ],
+            "about": [
+                {
+                    "href": "http:\/\/localhost\/fcb\/wordpress\/wp-json\/wp\/v2\/types\/page"
+                }
+            ],
+            "author": [
+                {
+                    "embeddable": true,
+                    "href": "http:\/\/localhost\/fcb\/wordpress\/wp-json\/wp\/v2\/users\/1"
+                }
+            ],
+            "replies": [
+                {
+                    "embeddable": true,
+                    "href": "http:\/\/localhost\/fcb\/wordpress\/wp-json\/wp\/v2\/comments?post=13"
+                }
+            ],
+            "version-history": [
+                {
+                    "count": 1,
+                    "href": "http:\/\/localhost\/fcb\/wordpress\/wp-json\/wp\/v2\/pages\/13\/revisions"
+                }
+            ],
+            "predecessor-version": [
+                {
+                    "id": 14,
+                    "href": "http:\/\/localhost\/fcb\/wordpress\/wp-json\/wp\/v2\/pages\/13\/revisions\/14"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "http:\/\/localhost\/fcb\/wordpress\/wp-json\/wp\/v2\/media?parent=13"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https:\/\/api.w.org\/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    }
+]
