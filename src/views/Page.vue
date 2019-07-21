@@ -1,5 +1,5 @@
 <template>
-    <post-or-page :post-or-page="page" back-to="infos" />
+    <post-or-page :post-or-page="page" back-to="pages" />
 </template>
 
 <script>
@@ -11,7 +11,7 @@ export default {
     mixins: [dataLoader],
     computed:{
         page(){
-            return this.infos.find(page => {
+            return this.pages.find(page => {
                 return page.slug === this.$route.params.slug
             }) || {} // to avoid errors in console when data is not fetched yet
         }

@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import News from './views/News.vue'
-import Infos from './views/Infos.vue'
+import Posts from './views/Posts.vue'
+import Pages from './views/Pages.vue'
 import Post from './views/Post.vue'
 import Page from './views/Page.vue'
 
@@ -13,8 +13,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'news',
-      component: News,
+      name: 'posts',
+      component: Posts,
       meta:{side:'left'}
     },
     {
@@ -25,8 +25,8 @@ export default new Router({
     },
     {
       path: '/infos',
-      name: 'infos',
-      component: Infos,
+      name: 'pages',
+      component: Pages,
       meta:{side:'right'}
     },
     {

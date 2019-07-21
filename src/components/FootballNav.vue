@@ -1,13 +1,13 @@
 <template>
     <nav>
-        <div @click="changePage('news', 'left')">
-            <span class="nav-link nav-news">News</span>
-            <footballer ref="footballer-infos"/>
+        <div @click="changePage('posts', 'left')">
+            <span class="nav-link nav-posts">News</span>
+            <footballer ref="footballer-pages"/>
         </div>
         <ball class="ball"/>
-        <div @click="changePage('infos', 'right')">
-            <footballer ref="footballer-news" :revert="true"/> 
-            <span class="nav-link nav-infos">Infos</span>      
+        <div @click="changePage('pages', 'right')">
+            <footballer ref="footballer-posts" :revert="true"/> 
+            <span class="nav-link nav-pages">Pages</span>      
         </div>
     </nav>
 </template>
@@ -56,8 +56,8 @@ nav {
   width: 70px;
 }
 
-.ball-left .nav-news,
-.ball-right .nav-infos{
+.ball-left .nav-posts,
+.ball-right .nav-pages{
   color: black;
 }
 </style>

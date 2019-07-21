@@ -1,8 +1,8 @@
 <template>
-  <section class="infos">
+  <section class="pages">
     <h1>Infos</h1>
     <div class="articles">
-      <article v-for="article in infos" :key="article.id">
+      <article v-for="article in pages" :key="article.id">
         <h1><router-link :to="'infos/' + article.slug">{{ article.title.rendered }}</router-link ></h1>
         <div v-html="article.content.rendered" />
       </article>
@@ -14,7 +14,7 @@
 import dataLoader from './data-loader-mixin'
 
 export default {
-  name: 'infos',
+  name: 'pages',
   mixins: [dataLoader]
 }
 </script>

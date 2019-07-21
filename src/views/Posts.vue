@@ -1,7 +1,7 @@
 <template>
-  <section class="news">
+  <section class="posts">
     <h1>News</h1>
-    <article v-for="post in news" :key="post.id">
+    <article v-for="post in posts" :key="post.id">
       <h1><router-link :to="'news/' + post.id">{{ post.title.rendered }}</router-link ></h1>
       <small>{{ getDate(post.date) }}</small>
       <div v-html="post.content.rendered" />
@@ -13,7 +13,7 @@
 import dataLoader from './data-loader-mixin'
 
 export default {
-  name: 'news',
+  name: 'posts',
   mixins: [dataLoader]
 }
 </script>

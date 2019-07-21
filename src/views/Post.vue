@@ -1,5 +1,5 @@
 <template>
-    <post-or-page :post-or-page="post" back-to="news">
+    <post-or-page :post-or-page="post" back-to="posts">
         Billet publié le {{ getDate(post.date, 'LL') }} par {{post.author}}
     </post-or-page>
 </template>
@@ -13,7 +13,7 @@ export default {
     mixins: [dataLoader],
     computed:{
         post(){
-            return this.news.find(post => {
+            return this.posts.find(post => {
                 return post.id == this.$route.params.id
             }) || {} // to avoid errors in console when data is not fetched yet
         }
