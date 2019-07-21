@@ -1,0 +1,206 @@
+[
+    {
+        "id": 8,
+        "date": "2019-06-21T16:59:18",
+        "date_gmt": "2019-06-21T14:59:18",
+        "guid": {
+            "rendered": "http:\/\/localhost\/wordpress\/?p=8"
+        },
+        "modified": "2019-07-20T17:02:33",
+        "modified_gmt": "2019-07-20T15:02:33",
+        "slug": "le-sauvetage",
+        "status": "publish",
+        "type": "post",
+        "link": "http:\/\/localhost\/fcb\/wordpress\/le-sauvetage\/",
+        "title": {
+            "rendered": "Le sauvetage"
+        },
+        "content": {
+            "rendered": "\n<p>Ce fut une saison difficile pour la premi\u00e8re \u00e9quipe. En effet, \u00e0 la fin de la saison r\u00e9guli\u00e8re, nous pointions bon dernier avec un total de 5 points en 22 matchs&#8230; Pas un grande saison en r\u00e9sum\u00e9 \ud83d\ude05<\/p>\n\n\n\n<p>Autant dire qu&rsquo;on \u00e9tait mal barr\u00e9s pour le maintien en 4<sup>\u00e8me<\/sup>&nbsp;ligue, objectif annonc\u00e9 \u00e0 la pause hivernale (on n&rsquo;avait alors qu&rsquo;un seul point). Il faut l&rsquo;avouer, un coup de chance nous a permis de croire encore au sauvetage en fin de saison: En effet, en raison d&rsquo;un retrait d&rsquo;\u00e9quipe dans une ligue sup\u00e9rieure, l&rsquo;ANF n&rsquo;a fait d\u00e9cendre que deux \u00e9quipes de 4\u00e8me ligue pour trois groupes. C&rsquo;est ainsi que nous avons jou\u00e9 la rel\u00e9gation en 5<sup>\u00e8me<\/sup>&nbsp;lors d&rsquo;un match de barrage contre la deuxi\u00e8me \u00e9quipe de Peseux-Com\u00e8te.<\/p>\n\n\n\n<figure class=\"wp-block-image\"><img src=\"http:\/\/localhost\/wordpress\/wp-content\/uploads\/2019\/07\/2-7-1024x606.png\" alt=\"\" class=\"wp-image-9\" srcset=\"http:\/\/localhost\/fcb\/wordpress\/wp-content\/uploads\/2019\/07\/2-7-1024x606.png 1024w, http:\/\/localhost\/fcb\/wordpress\/wp-content\/uploads\/2019\/07\/2-7-300x177.png 300w, http:\/\/localhost\/fcb\/wordpress\/wp-content\/uploads\/2019\/07\/2-7-768x454.png 768w, http:\/\/localhost\/fcb\/wordpress\/wp-content\/uploads\/2019\/07\/2-7.png 1518w\" sizes=\"(max-width: 1024px) 100vw, 1024px\" \/><\/figure>\n\n\n\n<p>C&rsquo;\u00e9tait juste, mais la premi\u00e8re s&rsquo;est sauv\u00e9e et disputera la saison 2019-2020 en 4<sup>\u00e8me<\/sup>&nbsp;ligue !<\/p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>Ce fut une saison difficile pour la premi\u00e8re \u00e9quipe. En effet, \u00e0 la fin de la saison r\u00e9guli\u00e8re, nous pointions bon dernier avec un total de 5 points en 22 matchs&#8230; Pas un grande saison en r\u00e9sum\u00e9 \ud83d\ude05 Autant dire qu&rsquo;on \u00e9tait mal barr\u00e9s pour le maintien en 4\u00e8me&nbsp;ligue, objectif annonc\u00e9 \u00e0 la pause hivernale [&hellip;]<\/p>\n",
+            "protected": false
+        },
+        "author": 1,
+        "featured_media": 0,
+        "comment_status": "open",
+        "ping_status": "open",
+        "sticky": false,
+        "template": "",
+        "format": "standard",
+        "meta": [],
+        "categories": [
+            1
+        ],
+        "tags": [],
+        "_links": {
+            "self": [
+                {
+                    "href": "http:\/\/localhost\/fcb\/wordpress\/wp-json\/wp\/v2\/posts\/8"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "http:\/\/localhost\/fcb\/wordpress\/wp-json\/wp\/v2\/posts"
+                }
+            ],
+            "about": [
+                {
+                    "href": "http:\/\/localhost\/fcb\/wordpress\/wp-json\/wp\/v2\/types\/post"
+                }
+            ],
+            "author": [
+                {
+                    "embeddable": true,
+                    "href": "http:\/\/localhost\/fcb\/wordpress\/wp-json\/wp\/v2\/users\/1"
+                }
+            ],
+            "replies": [
+                {
+                    "embeddable": true,
+                    "href": "http:\/\/localhost\/fcb\/wordpress\/wp-json\/wp\/v2\/comments?post=8"
+                }
+            ],
+            "version-history": [
+                {
+                    "count": 1,
+                    "href": "http:\/\/localhost\/fcb\/wordpress\/wp-json\/wp\/v2\/posts\/8\/revisions"
+                }
+            ],
+            "predecessor-version": [
+                {
+                    "id": 10,
+                    "href": "http:\/\/localhost\/fcb\/wordpress\/wp-json\/wp\/v2\/posts\/8\/revisions\/10"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "http:\/\/localhost\/fcb\/wordpress\/wp-json\/wp\/v2\/media?parent=8"
+                }
+            ],
+            "wp:term": [
+                {
+                    "taxonomy": "category",
+                    "embeddable": true,
+                    "href": "http:\/\/localhost\/fcb\/wordpress\/wp-json\/wp\/v2\/categories?post=8"
+                },
+                {
+                    "taxonomy": "post_tag",
+                    "embeddable": true,
+                    "href": "http:\/\/localhost\/fcb\/wordpress\/wp-json\/wp\/v2\/tags?post=8"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https:\/\/api.w.org\/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 11,
+        "date": "2019-06-12T17:02:43",
+        "date_gmt": "2019-06-12T15:02:43",
+        "guid": {
+            "rendered": "http:\/\/localhost\/wordpress\/?p=11"
+        },
+        "modified": "2019-07-20T17:03:22",
+        "modified_gmt": "2019-07-20T15:03:22",
+        "slug": "prochains-evenements",
+        "status": "publish",
+        "type": "post",
+        "link": "http:\/\/localhost\/fcb\/wordpress\/prochains-evenements\/",
+        "title": {
+            "rendered": "Prochains \u00e9v\u00e9nements"
+        },
+        "content": {
+            "rendered": "\n<p>Cet \u00e9t\u00e9, le club participera \u00e0 3 \u00e9v\u00e9nements majeurs du village<\/p>\n\n\n\n<ul><li>Le samedi 29 juin :&nbsp;<a target=\"_blank\" href=\"https:\/\/www.lesbrenets.ch\/index.php?id=14090&amp;tx_ttnews%5Btt_news%5D=8793&amp;cHash=804658dc3d47b6f0149953c4a72a7475\" rel=\"noreferrer noopener\">F\u00eate de la Jeunesse 2019<\/a>&nbsp;&#8211; Le FC tiendra un stand \u00e0 la traditionnelle f\u00eate du village.<\/li><li>Le mercredi 31 juillet 2019 : \u00e0 l&rsquo;occasion de la f\u00eate nationale, le club s&rsquo;occupera de vous abreuver. \u00c7a se passe au bord du lac des Brenets et il y aura comme d&rsquo;habitude un chouette feu d&rsquo;artifice d\u00e8s 22h sur le lac.<\/li><li>Le samedi&nbsp;<strong>17 ao\u00fbt<\/strong>&nbsp;il y aura notre traditionnel&nbsp;<strong>tournoi populaire<\/strong>&nbsp;\u00e0 six. Des infos compl\u00e9mentaires suivront.<\/li><\/ul>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>Cet \u00e9t\u00e9, le club participera \u00e0 3 \u00e9v\u00e9nements majeurs du village Le samedi 29 juin :&nbsp;F\u00eate de la Jeunesse 2019&nbsp;&#8211; Le FC tiendra un stand \u00e0 la traditionnelle f\u00eate du village. Le mercredi 31 juillet 2019 : \u00e0 l&rsquo;occasion de la f\u00eate nationale, le club s&rsquo;occupera de vous abreuver. \u00c7a se passe au bord du [&hellip;]<\/p>\n",
+            "protected": false
+        },
+        "author": 1,
+        "featured_media": 0,
+        "comment_status": "open",
+        "ping_status": "open",
+        "sticky": false,
+        "template": "",
+        "format": "standard",
+        "meta": [],
+        "categories": [
+            1
+        ],
+        "tags": [],
+        "_links": {
+            "self": [
+                {
+                    "href": "http:\/\/localhost\/fcb\/wordpress\/wp-json\/wp\/v2\/posts\/11"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "http:\/\/localhost\/fcb\/wordpress\/wp-json\/wp\/v2\/posts"
+                }
+            ],
+            "about": [
+                {
+                    "href": "http:\/\/localhost\/fcb\/wordpress\/wp-json\/wp\/v2\/types\/post"
+                }
+            ],
+            "author": [
+                {
+                    "embeddable": true,
+                    "href": "http:\/\/localhost\/fcb\/wordpress\/wp-json\/wp\/v2\/users\/1"
+                }
+            ],
+            "replies": [
+                {
+                    "embeddable": true,
+                    "href": "http:\/\/localhost\/fcb\/wordpress\/wp-json\/wp\/v2\/comments?post=11"
+                }
+            ],
+            "version-history": [
+                {
+                    "count": 1,
+                    "href": "http:\/\/localhost\/fcb\/wordpress\/wp-json\/wp\/v2\/posts\/11\/revisions"
+                }
+            ],
+            "predecessor-version": [
+                {
+                    "id": 12,
+                    "href": "http:\/\/localhost\/fcb\/wordpress\/wp-json\/wp\/v2\/posts\/11\/revisions\/12"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "http:\/\/localhost\/fcb\/wordpress\/wp-json\/wp\/v2\/media?parent=11"
+                }
+            ],
+            "wp:term": [
+                {
+                    "taxonomy": "category",
+                    "embeddable": true,
+                    "href": "http:\/\/localhost\/fcb\/wordpress\/wp-json\/wp\/v2\/categories?post=11"
+                },
+                {
+                    "taxonomy": "post_tag",
+                    "embeddable": true,
+                    "href": "http:\/\/localhost\/fcb\/wordpress\/wp-json\/wp\/v2\/tags?post=11"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https:\/\/api.w.org\/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    }
+]
