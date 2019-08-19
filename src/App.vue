@@ -34,7 +34,9 @@ a{
 body,html{
   margin:0;
   padding:0;
-  background:floralwhite;
+  background-color:#cce0f4;
+  background-image:url('../public/bg.png');
+  background-size:cover;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
