@@ -1,7 +1,7 @@
 <template>
     <div>
         <router-link :to="{name:backTo}" class="back-link">
-            Retour aux {{backTo}}
+            Retour
         </router-link>
         <article>
             <h1>{{ (postOrPage.title || {}).rendered }}</h1>
