@@ -7,7 +7,7 @@
         <ball class="ball"/>
         <div @click="changePage('pages', 'right')">
             <footballer ref="footballer-posts" :revert="true"/> 
-            <span class="nav-link nav-pages">Pages</span>      
+            <span class="nav-link nav-pages">Infos</span>
         </div>
     </nav>
 </template>

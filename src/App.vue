@@ -48,7 +48,8 @@ body,html{
 header{
   text-align: center;
   img{
-    height: 120px;
+    height: 100px;
+    margin: 10px;
   }
 }
 
