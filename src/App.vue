@@ -23,6 +23,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,400i,700');
+
 $font-color:#2c3e50;
 $accent-color:#057ec4;
 
@@ -37,7 +39,7 @@ body,html{
   background-color:#cce0f4;
   background:url('../public/bg.png') no-repeat center center fixed; ;
   background-size:cover;
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Nunito', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: $font-color;
