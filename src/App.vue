@@ -37,7 +37,7 @@ body,html{
   margin:0;
   padding:0;
   background-color:#cce0f4;
-  background:url('../public/bg.png') no-repeat center center fixed; ;
+  background:url('../public/bg.svg') no-repeat center center fixed; ;
   background-size:cover;
   font-family: 'Nunito', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
