@@ -35,7 +35,7 @@ body,html{
   margin:0;
   padding:0;
   background-color:#cce0f4;
-  background-image:url('../public/bg.png');
+  background:url('../public/bg.png') no-repeat center center fixed; ;
   background-size:cover;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -55,7 +55,7 @@ header{
 
 main{
   border-top: 1px solid $font-color;
-  padding: 10px;
+  padding: 20px;
   width:100%; 
   max-width: 800px;
   margin: auto;
