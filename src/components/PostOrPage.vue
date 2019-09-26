@@ -21,6 +21,7 @@ export default {
 .back-link{
     margin: 10px 0;
     display: block;
+    color:white;
     &:before{
         content:"⬅";
         margin-right:4px;
