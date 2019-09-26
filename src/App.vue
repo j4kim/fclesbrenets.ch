@@ -24,7 +24,7 @@ export default {
 
 <style lang="scss">
 $font-color:#2c3e50;
-$accent-color:lighten(saturate($font-color, 60%),20%);
+$accent-color:#057ec4;
 
 * { box-sizing: border-box; }
 a{

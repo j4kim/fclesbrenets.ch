@@ -23,8 +23,8 @@
 export default {
     props:{
         revert: Boolean,
-        colorShirt: {type:String, default:'#2562C8'},
-        colorShorts: {type:String, default:'#E6E6E6'},
+        colorShirt: {type:String, default:'#005b97'},
+        colorShorts: {type:String, default:'#ffffff'},
         colorSkin: {type:String, default:'#FFCFB5'}
     },
     data(){
