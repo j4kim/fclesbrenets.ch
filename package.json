@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "deploy": "vue-cli-service build --mode deploy --dest deployable"
+    "deploy": "vue-cli-service build --mode deploy --dest deployable",
+    "xampp": "vue-cli-service build --mode xampp"
   },
   "dependencies": {
     "axios": "^0.19.0",
