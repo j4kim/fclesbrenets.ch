@@ -7,7 +7,8 @@
     </header>
     <football-nav/>
     <main>  
-      <router-view/>  
+      <router-view/>
+      <logo-bar/>
     </main>
     <footer>
     </footer>
@@ -16,9 +17,10 @@
 
 <script>
 import FootballNav from '@/components/FootballNav.vue'
+import LogoBar from '@/components/LogoBar.vue'
 
 export default {
-  components: { FootballNav }
+  components: { FootballNav, LogoBar }
 }
 </script>
 
