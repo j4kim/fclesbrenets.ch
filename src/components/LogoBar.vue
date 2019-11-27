@@ -1,5 +1,5 @@
 <template>
-    <sidebar>
+    <aside>
         logos ici
-    </sidebar>
+    </aside>
 </template>
