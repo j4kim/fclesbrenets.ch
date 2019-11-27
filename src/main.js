@@ -14,7 +14,7 @@ Vue.mixin({
 
 Vue.config.productionTip = false
 
-var data = { posts:[], pages:[], users:[] }
+var data = { posts:[], pages:[], users:[], sponsors:[] }
 
 function fetchIfNeeded(resource){
     if(data[resource].length === 0){
@@ -25,6 +25,7 @@ function fetchIfNeeded(resource){
 }
 
 fetchIfNeeded('users')
+fetchIfNeeded('sponsors')
 
 router.beforeEach((to, from, next) => {
     fetchIfNeeded(to.meta.side === 'left' ? 'posts' : 'pages')
