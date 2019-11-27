@@ -1,9 +1,9 @@
 <template>
-    <aside>
+    <div>
         <div
             v-for="sponsor in $root.sponsors"
             :key="sponsor.id"
             v-html="sponsor.content.rendered"
         />
-    </aside>
+    </div>
 </template>

@@ -8,19 +8,19 @@
     <football-nav/>
     <main>  
       <router-view/>
-      <logo-bar/>
     </main>
     <footer>
+      <sponsors/>
     </footer>
   </div>
 </template>
 
 <script>
 import FootballNav from '@/components/FootballNav.vue'
-import LogoBar from '@/components/LogoBar.vue'
+import Sponsors from '@/components/Sponsors.vue'
 
 export default {
-  components: { FootballNav, LogoBar }
+  components: { FootballNav, Sponsors }
 }
 </script>
 
@@ -72,6 +72,7 @@ header{
 
 main{
   border-top: 1px solid $font-color;
+  border-bottom: 1px solid $font-color;
   padding: 20px;
   width:100%; 
   max-width: 800px;
