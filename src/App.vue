@@ -10,7 +10,7 @@
       <router-view/>
     </main>
     <footer>
-      <sponsors/>
+      <sponsors v-if="$route.name !== 'sponsors'"/>
     </footer>
   </div>
 </template>

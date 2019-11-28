@@ -4,6 +4,7 @@ import Posts from './views/Posts.vue'
 import Pages from './views/Pages.vue'
 import Post from './views/Post.vue'
 import Page from './views/Page.vue'
+import Sponsors from './components/Sponsors.vue'
 
 Vue.use(Router)
 
@@ -34,6 +35,11 @@ export default new Router({
       name: 'page',
       component: Page,
       meta:{side:'right'}
+    },
+    {
+      path: '/sponsors',
+      name: 'sponsors',
+      component: Sponsors
     }
   ]
 })
