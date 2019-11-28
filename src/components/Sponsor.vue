@@ -1,5 +1,5 @@
 <template>
-    <div class="sponsor" :class="'size-'+sponsor.size">
+    <div  class="sponsor" :class="sponsor.classes">
         <img v-if="media" :src="mediaSrc" />
         {{ sponsor.name }}
     </div>
@@ -28,6 +28,10 @@ export default {
         padding: 1rem;
         img{
             max-width: 100%;
+        }
+        &.inverted{
+            background-color: #2c3e50;
+            color: white;
         }
     }
 </style>
