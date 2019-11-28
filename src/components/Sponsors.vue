@@ -1,18 +1,19 @@
 <template>
     <div class="sponsors">
-        <div class="sponsor"
-            v-for="sm in sponsorsAndMedia"
-            :key="sm.sponsor.id">
-            {{ sm.sponsor.name }}
-        </div>
+        <sponsor
+            v-for="s in sponsors"
+            :key="s.name"
+            :sponsor="s"/>
     </div>
 </template>
 
 <script>
 import axios from "axios"
 import { zipObject } from "lodash"
+import Sponsor from "./Sponsor"
 
 export default {
+    components: { Sponsor },
     data(){
         return {
             sponsors: []
@@ -24,16 +25,6 @@ export default {
                 process.env.VUE_APP_SPREADSHEET_ID + "/values/" +
                 process.env.VUE_APP_SPREADSHEET_RANGE +
                 "?key=" + process.env.VUE_APP_GOOGLE_API_KEY
-        },
-        sponsorsAndMedia(){
-            var sponsorsAndMedia = []
-            this.sponsors.forEach(sponsor => {
-                var media = this.$root.media.find(media => {
-                    return media.title.rendered === sponsor.imageTitle
-                })
-                sponsorsAndMedia.push({sponsor, media})
-            })
-            return sponsorsAndMedia
         }
     },
     created(){
