@@ -1,7 +1,7 @@
 <template>
     <div class="sponsors-grid">
         <sponsor
-            v-for="s in sponsors"
+            v-for="s in shuffledSponsors"
             :key="s.name"
             :sponsor="s"/>
     </div>
@@ -9,7 +9,7 @@
 
 <script>
 import axios from "axios"
-import { zipObject } from "lodash"
+import { zipObject, shuffle } from "lodash"
 import Sponsor from "./Sponsor"
 
 export default {
@@ -25,6 +25,9 @@ export default {
                 process.env.VUE_APP_SPREADSHEET_ID + "/values/" +
                 process.env.VUE_APP_SPREADSHEET_RANGE +
                 "?key=" + process.env.VUE_APP_GOOGLE_API_KEY
+        },
+        shuffledSponsors(){
+            return shuffle(this.sponsors)
         }
     },
     created(){
