@@ -16,3 +16,10 @@ export default {
     }
 }
 </script>
+
+<style lang="scss">
+    .sponsor{
+        background-color: white;
+        padding: 1rem;
+    }
+</style>

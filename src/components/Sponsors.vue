@@ -1,5 +1,5 @@
 <template>
-    <div class="sponsors">
+    <div class="sponsors-grid">
         <sponsor
             v-for="s in sponsors"
             :key="s.name"
@@ -41,3 +41,11 @@ export default {
     }
 }
 </script>
+
+<style lang="scss" scoped>
+    .sponsors-grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-gap: 1rem;
+    }
+</style>
