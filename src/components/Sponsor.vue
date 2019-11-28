@@ -1,5 +1,6 @@
 <template>
-    <div class="sponsor">
+    <div class="sponsor" :class="'size-'+sponsor.size">
+        <img v-if="media" :src="mediaSrc" />
         {{ sponsor.name }}
     </div>
 </template>
@@ -12,6 +13,10 @@ export default {
             return this.$root.media.find(media => {
                 return media.title.rendered === this.sponsor.mediaTitle
             })
+        },
+        mediaSrc(){
+            var sizes = this.media.media_details.sizes
+            return (sizes.medium || sizes.full).source_url
         }
     }
 }
@@ -21,5 +26,8 @@ export default {
     .sponsor{
         background-color: white;
         padding: 1rem;
+        img{
+            max-width: 100%;
+        }
     }
 </style>
