@@ -5,7 +5,7 @@
             :key="sponsor.id"
         >
             {{ sponsor.name }}
-    </div>
+        </div>
     </div>
 </template>
 
@@ -33,6 +33,9 @@ export default {
             var header = data.shift()
             data.forEach(row => {
                 var sponsor = zipObject(header, row)
+                sponsor.media = this.$root.media.find(m => {
+                    return m.title.rendered == sponsor.name
+                })
                 this.sponsors.push(sponsor)
             })
         })
