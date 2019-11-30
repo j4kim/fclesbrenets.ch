@@ -9,18 +9,14 @@
     <main>  
       <router-view/>
     </main>
-    <footer>
-      <sponsors v-if="$route.name !== 'sponsors'"/>
-    </footer>
   </div>
 </template>
 
 <script>
 import FootballNav from '@/components/FootballNav.vue'
-import Sponsors from '@/components/Sponsors.vue'
 
 export default {
-  components: { FootballNav, Sponsors }
+  components: { FootballNav }
 }
 </script>
 
