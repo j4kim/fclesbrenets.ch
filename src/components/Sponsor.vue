@@ -1,7 +1,9 @@
 <template>
     <div  class="sponsor" :class="sponsor.classes">
-        <img v-if="media" :src="mediaSrc" />
-        {{ sponsor.name }}
+        <div v-if="media">
+            <img :src="mediaSrc" />
+        </div>
+        <label>{{ sponsor.name }}</label>
     </div>
 </template>
 
@@ -24,14 +26,23 @@ export default {
 
 <style lang="scss">
     .sponsor{
-        background-color: white;
-        padding: 1rem;
-        img{
-            max-width: 100%;
-        }
         &.inverted{
             background-color: #2c3e50;
             color: white;
+        }
+        background-color: white;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        div{
+            flex-grow: 1;
+            img{
+                max-width: 100%;
+            }
+        }
+        label{
+            text-align: center;
         }
     }
 </style>
