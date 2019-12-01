@@ -3,7 +3,7 @@
         <div class="media" v-if="media">
             <img :src="mediaSrc" />
         </div>
-        <div class="contact">
+        <div class="contact" :class="media ? '' : 'no-media'">
             <div v-for="line in contact" :key="line">
                 {{ line }}
             </div>
@@ -55,7 +55,10 @@ export default {
         }
         div.contact{
             text-align: center;
-            font-size: 10px;
+            font-size: 11px;
+            &.no-media{
+                font-size: 14px;
+            }
         }
     }
 </style>
