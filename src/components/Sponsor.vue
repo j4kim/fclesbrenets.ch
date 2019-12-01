@@ -1,9 +1,13 @@
 <template>
     <div  class="sponsor" :class="sponsor.classes">
-        <div v-if="media">
+        <div class="media" v-if="media">
             <img :src="mediaSrc" />
         </div>
-        <label>{{ sponsor.name }}</label>
+        <div class="contact">
+            <div v-for="line in contact" :key="line">
+                {{ line }}
+            </div>
+        </div>
     </div>
 </template>
 
@@ -19,6 +23,14 @@ export default {
         mediaSrc(){
             var sizes = this.media.media_details.sizes
             return (sizes.medium || sizes.full).source_url
+        },
+        contact(){
+            return [
+                this.sponsor.name,
+                this.sponsor.address,
+                this.sponsor.npa + " " + this.sponsor.city ,
+                this.sponsor.tel
+            ]
         }
     }
 }
@@ -35,14 +47,15 @@ export default {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        div{
+        div.media{
             flex-grow: 1;
             img{
                 max-width: 100%;
             }
         }
-        label{
+        div.contact{
             text-align: center;
+            font-size: 10px;
         }
     }
 </style>
