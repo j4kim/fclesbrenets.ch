@@ -16,10 +16,11 @@ Vue.config.productionTip = false
 
 var data = { posts:[], pages:[], users:[], media:[] }
 
-function fetchResource(resource, args){
+function fetchResource(resource, params){
     // Warning: 10 rows per page by default
     // todo: pagination for posts and multiple requests for media
-    axios.get(process.env.VUE_APP_API + resource + "?" + args).then(result => {
+    var baseURL = process.env.VUE_APP_API
+    axios.get(resource, {baseURL, params}).then(result => {
         data[resource] = result.data
     })
 }
@@ -27,7 +28,10 @@ function fetchResource(resource, args){
 fetchResource('users')
 fetchResource('posts')
 fetchResource('pages')
-fetchResource('media', "_fields=title,media_details&per_page=100")
+fetchResource('media', {
+    _fields: "title,media_details",
+    per_page: 100
+})
 
 new Vue({
     router,
