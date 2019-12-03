@@ -23,18 +23,18 @@ const DEFAULT_PARAMS = {
     media: { _fields: "title,media_details", per_page: 100 }
 }
 
-function fetchResource(resource, params){
-    params =  Object.assign({}, DEFAULT_PARAMS[resource], params)
+function fetchPage(resource, page = 1){
+    var params =  Object.assign({ page }, DEFAULT_PARAMS[resource])
     var baseURL = process.env.VUE_APP_API
     axios.get(resource, {baseURL, params}).then(result => {
         data[resource] = result.data
     })
 }
 
-fetchResource('users')
-fetchResource('posts')
-fetchResource('pages')
-fetchResource('media')
+fetchPage('users')
+fetchPage('posts')
+fetchPage('pages')
+fetchPage('media')
 
 new Vue({
     router,
