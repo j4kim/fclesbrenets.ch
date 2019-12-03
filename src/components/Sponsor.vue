@@ -46,15 +46,15 @@ export default {
         padding: 1rem;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-around;
+        text-align: center;
         div.media{
-            flex-grow: 1;
             img{
                 max-width: 100%;
+                max-height: 100px;
             }
         }
         div.contact{
-            text-align: center;
             font-size: 11px;
             &.no-media{
                 font-size: 14px;
