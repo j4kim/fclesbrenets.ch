@@ -26,15 +26,24 @@ const DEFAULT_PARAMS = {
 function fetchPage(resource, page = 1){
     var params =  Object.assign({ page }, DEFAULT_PARAMS[resource])
     var baseURL = process.env.VUE_APP_API
-    axios.get(resource, {baseURL, params}).then(result => {
-        data[resource] = result.data
+    return axios.get(resource, {baseURL, params}).then(result => {
+        data[resource] = data[resource].concat(result.data)
+        return result
+    })
+}
+
+function fetchAll(resource, pageToFetch = 1){
+    fetchPage(resource, pageToFetch).then(result => {
+        if(result.headers["x-wp-totalpages"] > pageToFetch){
+            fetchAll(resource, pageToFetch + 1)
+        }
     })
 }
 
 fetchPage('users')
 fetchPage('posts')
 fetchPage('pages')
-fetchPage('media')
+fetchAll('media')
 
 new Vue({
     router,
