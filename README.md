@@ -42,10 +42,15 @@ En production, Wordpress est dans un sous-dossier `wordpress` à la racine du r�
 
 ### Prérequis
 
+Pour construire l'application:
+* [npm](https://www.npmjs.com/get-npm)
+
+Pour le déploiement:
+* Un accès au serveur FTP (voir avec moi)
+
+Pour avoir le back-end en local:
 * Environnement de développement PHP tout-en-un, exemple [XAMPP](https://www.apachefriends.org/fr/index.html)
 * Une installation de [Wordpress](https://wordpress.org/download/)
-* [npm](https://www.npmjs.com/get-npm)
-* Un accès au serveur FTP pour le déploiement (voir avec moi)
 
 ### Récupérer les dépendances JavaScript
 
@@ -55,14 +60,23 @@ npm install
 
 ### Lancer sur un serveur Local
 
-Installer Wordpress dans le dossier publique du serveur Apache local et lancer le serveur.
+Il doit y avoir un fichier `.env` à la racine du dossier du projet qui contient la déclaration de la variable d'environnement `VUE_APP_API`. Cette variable doit cibler l'API REST de Wordpress, soit en local, exemple:
+```
+VUE_APP_API=http://localhost:8080/fcb/wordpress/wp-json/wp/v2/`
+```
+Dans ce cas, il faut avoir un serveur PHP local qui fait tourner Wordpress.
 
-Il doit y avoir un fichier `.env` à la racine du dossier du projet qui contient la déclaration de la variable d'environnement `VUE_APP_API`. Cette variable doit cibler l'API REST de Wordpress, par exemple `http://localhost/fcb/wordpress/wp-json/wp/v2`.
+Soit directement sur la production:
+```
+VUE_APP_API=https://fclesbrenets.ch/wordpress/wp-json/wp/v2/
+```
+Ce n'est pas dangereux vu qu'on ne fait que des requêtes de lecture.
 
-Compiler l'application à la volée:
+Puis, compiler l'application à la volée:
 ```
 npm run serve
 ```
+Cette commande lance un serveur local avec *hot-reload*.
 
 ### Déploiement
 
