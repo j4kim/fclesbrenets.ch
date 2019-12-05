@@ -25,7 +25,7 @@ La liste des sponsors ([fclesbrenets.ch/sponsors](https://fclesbrenets.ch/sponso
 
 Une image peut être liée à un sponsor. Pour cela:
 1. Ajouter l'image depuis l'onglet "Médias" sur la console d'adminstration;
-2. Copier le titre du média depuis la console;
+2. Copier le titre du média depuis la console d'adminstration;
 3. Coller le nom dans la colonne mediaTitle dans le classeur.
 
 Dans le classeur, la colonne "classes" permet d'afficher la brique d'un sponsor plus grand ou avec les couleurs inversées (dans le cas où le logo est blanc). La classe `2x1` fera que la brique est deux fois plus large que les autres. `1x2` la fera deux fois plus haute et `2x2` quadruple la surface de la brique. La classe `inverted` applique un fond bleu foncé avec le texte en blanc.
