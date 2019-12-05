@@ -10,7 +10,7 @@
 <script>
 import axios from "axios"
 import { zipObject, shuffle } from "lodash"
-import Sponsor from "./Sponsor"
+import Sponsor from "@/components/Sponsor"
 
 export default {
     components: { Sponsor },
