@@ -21,14 +21,14 @@ L'ordre des pages peut être modifiée par l'attribut "Ordre". Pour modifier cet
 
 ### Sponsors
 
-La liste des sponsors ([fclesbrenets.ch/sponsors](https://fclesbrenets.ch/sponsors)) provient du classeur Google Sheets [Liste Sponsoring](https://docs.google.com/spreadsheets/d/1i94pLT9FZ4oqBYGKCiJMiBBsyq5CXaJtZ78XEWOSIM0/edit?usp=sharing), stocké sur le Drive du FC.
+La liste des sponsors ([fclesbrenets.ch/sponsors](https://fclesbrenets.ch/sponsors)) provient d'un [classeur Google Sheets](https://docs.google.com/spreadsheets/d/1i94pLT9FZ4oqBYGKCiJMiBBsyq5CXaJtZ78XEWOSIM0/edit?usp=sharing), stocké sur le Drive du FC.
 
 Une image peut être liée à un sponsor. Pour cela:
 1. Ajouter l'image depuis l'onglet "Médias" sur la console d'adminstration;
 2. Copier le titre du média depuis la console;
 3. Coller le nom dans la colonne mediaTitle dans le classeur.
 
-Dans le classeur, la colonne classes permet d'afficher la brique d'un sponsor plus grand ou avec les couleurs inversées (dans le cas où le logo est blanc). La classe `2x1` fera que la brique est deux fois plus large que les autres. `1x2` la fera deux fois plus haute et `2x2` quadruple la surface de la brique. La classe `inverted` applique un fond bleu foncé avec le texte en blanc.
+Dans le classeur, la colonne "classes" permet d'afficher la brique d'un sponsor plus grand ou avec les couleurs inversées (dans le cas où le logo est blanc). La classe `2x1` fera que la brique est deux fois plus large que les autres. `1x2` la fera deux fois plus haute et `2x2` quadruple la surface de la brique. La classe `inverted` applique un fond bleu foncé avec le texte en blanc.
 
 ## Documentation développeur
 
