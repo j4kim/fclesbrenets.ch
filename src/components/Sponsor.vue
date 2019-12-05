@@ -46,7 +46,7 @@ export default {
         padding: 1rem;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-evenly;
         text-align: center;
         div.media{
             img{
