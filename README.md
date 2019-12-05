@@ -21,7 +21,7 @@ L'ordre des pages peut être modifiée par l'attribut "Ordre". Pour modifier cet
 
 ### Sponsors
 
-La liste des sponsors ([fclesbrenets.ch/sponsors](https://fclesbrenets.ch/sponsors)) provient du classeur Google Sheets [Liste Sponsoring](https://drive.google.com/open?id=1Z_pwKLgXMYeDHLONKqODGpLWdNsM_z_vXrKu6qyHMBY), stocké sur le Drive du FC.
+La liste des sponsors ([fclesbrenets.ch/sponsors](https://fclesbrenets.ch/sponsors)) provient du classeur Google Sheets [Liste Sponsoring](https://docs.google.com/spreadsheets/d/1i94pLT9FZ4oqBYGKCiJMiBBsyq5CXaJtZ78XEWOSIM0/edit?usp=sharing), stocké sur le Drive du FC.
 
 Une image peut être liée à un sponsor. Pour cela:
 1. Ajouter l'image depuis l'onglet "Médias" sur la console d'adminstration;
