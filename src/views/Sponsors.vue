@@ -1,9 +1,12 @@
 <template>
-    <div class="sponsors-grid">
-        <sponsor
-            v-for="s in shuffledSponsors"
-            :key="s.name"
-            :sponsor="s"/>
+    <div>
+        <h1>Nous remercions chaleureusement nos partenaires matériel:</h1>
+        <div class="sponsors-grid">
+            <sponsor
+                v-for="s in shuffledSponsors"
+                :key="s.name"
+                :sponsor="s"/>
+        </div>
     </div>
 </template>
 
@@ -46,6 +49,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+    h1{
+        color: white;
+    }
     .sponsors-grid{
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
