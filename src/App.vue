@@ -9,14 +9,18 @@
     <main>  
       <router-view/>
     </main>
+    <div class="sponsors-container" v-if="$route.name !== 'sponsors'">
+      <sponsors/>
+    </div>
   </div>
 </template>
 
 <script>
 import FootballNav from '@/components/FootballNav.vue'
+import Sponsors from '@/views/Sponsors.vue'
 
 export default {
-  components: { FootballNav }
+  components: { FootballNav, Sponsors }
 }
 </script>
 
@@ -90,6 +94,10 @@ main{
       max-width: 100%;
     }
   }
+}
+
+.sponsors-container{
+  margin:20px;
 }
 
 figure.wp-block-embed-youtube{
