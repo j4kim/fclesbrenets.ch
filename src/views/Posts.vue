@@ -7,7 +7,7 @@
       <div v-html="post.content.rendered" />
     </article>
     <a class="load-more-btn"
-      v-if="$root.totalPages['posts'] > page"
+      v-if="$root.totalPages['posts'] >= nextPage"
       @click="loadPage">
       Charger plus
     </a>
@@ -19,13 +19,14 @@ export default {
   name: 'posts',
   data(){
     return {
-      page: 1
+      nextPage: 2
     }
   },
   methods:{
     loadPage(){
-      this.page++
-      this.$root.fetchPage('posts', this.page)
+      this.$root.fetchPage('posts', this.nextPage).then(() => {
+        this.nextPage++
+      })
     }
   }
 }
