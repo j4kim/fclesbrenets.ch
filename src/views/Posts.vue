@@ -6,11 +6,11 @@
       <small>{{ getDate(post.date) }}</small>
       <div v-html="post.content.rendered" />
     </article>
-    <button
+    <a class="load-more-btn"
       v-if="$root.totalPages['posts'] > page"
       @click="loadPage">
       Charger plus
-    </button>
+    </a>
   </section>
 </template>
 
@@ -32,5 +32,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  .load-more-btn{
+    padding: 10px;
+    background-color: #057ec4;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    &:hover{
+      color: #057ec4;
+      background-color: white;
+    }
+  }
 </style>
 
