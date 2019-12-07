@@ -11,7 +11,7 @@ export default {
         page(){
             return this.$root.pages.find(page => {
                 return page.slug === this.$route.params.slug
-            }) || {} // to avoid errors in console when data is not fetched yet
+            })
         }
     }
 }

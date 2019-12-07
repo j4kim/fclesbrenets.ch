@@ -3,9 +3,12 @@
         <router-link :to="{name:backTo}" class="back-link">
             Retour
         </router-link>
-        <article>
-            <h1>{{ (postOrPage.title || {}).rendered }}</h1>
-            <div v-html="(postOrPage.content || {}).rendered" />
+        <article v-if="postOrPage">
+            <h1>{{ postOrPage.title.rendered }}</h1>
+            <div v-html="postOrPage.content.rendered" />
+        </article>
+        <article v-else>
+            La page est introuvable
         </article>
         <slot></slot>
     </div>
