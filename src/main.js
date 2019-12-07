@@ -11,20 +11,24 @@ Vue.mixin({
     }
 })
 
-const DEFAULT_PARAMS = {
-    posts: { _fields: "author,content,date,id,excerpt,slug,sticky,title" },
-    pages: { _fields: "author,content,date,id,excerpt,slug,sticky,title,menu_order" },
-    users: { _fields: "name,id" },
-    media: { _fields: "title,media_details", per_page: 100 }
-}
-
 new Vue({
     router,
-    data: { posts:[], pages:[], users:[], media:[] },
+    data: {
+        posts: [],
+        pages: [],
+        users: [],
+        media: [],
+        defaultParams: {
+            posts: { _fields: "author,content,date,id,excerpt,slug,sticky,title" },
+            pages: { _fields: "author,content,date,id,excerpt,slug,sticky,title,menu_order" },
+            users: { _fields: "name,id" },
+            media: { _fields: "title,media_details", per_page: 100 }
+        }
+    },
     render: h => h(App),
     methods:{
         fetchPage(resource, page = 1){
-            var params =  Object.assign({ page }, DEFAULT_PARAMS[resource])
+            var params =  Object.assign({ page }, this.defaultParams[resource])
             var baseURL = process.env.VUE_APP_API
             return axios.get(resource, {baseURL, params}).then(result => {
                 this[resource] = this[resource].concat(result.data)
