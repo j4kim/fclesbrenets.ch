@@ -6,12 +6,28 @@
       <small>{{ getDate(post.date) }}</small>
       <div v-html="post.content.rendered" />
     </article>
+    <button
+      v-if="$root.totalPages['posts'] > page"
+      @click="loadPage">
+      Charger plus
+    </button>
   </section>
 </template>
 
 <script>
 export default {
-  name: 'posts'
+  name: 'posts',
+  data(){
+    return {
+      page: 1
+    }
+  },
+  methods:{
+    loadPage(){
+      this.page++
+      this.$root.fetchPage('posts', this.page)
+    }
+  }
 }
 </script>
 

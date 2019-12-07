@@ -23,6 +23,12 @@ new Vue({
             pages: { _fields: "author,content,date,id,excerpt,slug,sticky,title,menu_order" },
             users: { _fields: "name,id" },
             media: { _fields: "title,media_details", per_page: 100 }
+        },
+        totalPages: {
+            posts: undefined,
+            pages: undefined,
+            users: undefined,
+            media: undefined
         }
     },
     render: h => h(App),
@@ -32,12 +38,12 @@ new Vue({
             var baseURL = process.env.VUE_APP_API
             return axios.get(resource, {baseURL, params}).then(result => {
                 this[resource] = this[resource].concat(result.data)
-                return result
+                this.totalPages[resource] = result.headers["x-wp-totalpages"]
             })
         },
         fetchAll(resource, pageToFetch = 1){
-            this.fetchPage(resource, pageToFetch).then(result => {
-                if(result.headers["x-wp-totalpages"] > pageToFetch){
+            this.fetchPage(resource, pageToFetch).then(() => {
+                if(this.totalPages[resource] > pageToFetch){
                     this.fetchAll(resource, pageToFetch + 1)
                 }
             })
