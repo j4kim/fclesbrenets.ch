@@ -45,6 +45,9 @@ En production, Wordpress est dans un sous-dossier `wordpress` à la racine du r�
 Pour construire l'application:
 * [npm](https://www.npmjs.com/get-npm)
 
+Pour se connecter à la Google Sheets API:
+* [Une clé d'API](https://developers.google.com/sheets/api/guides/authorizing#APIKey)
+
 Pour le déploiement:
 * Un accès au serveur FTP (voir avec moi)
 
@@ -60,17 +63,19 @@ npm install
 
 ### Lancer sur un serveur Local
 
-Il doit y avoir un fichier `.env` à la racine du dossier du projet qui contient la déclaration de la variable d'environnement `VUE_APP_API`. Cette variable doit cibler l'API REST de Wordpress, soit en local, exemple:
+Le fichier `.env` à la racine du dossier du projet doit contenir la déclaration de la variable d'environnement `VUE_APP_API`. Cette variable doit cibler l'API REST de Wordpress, soit en local, exemple:
 ```
 VUE_APP_API=http://localhost:8080/fcb/wordpress/wp-json/wp/v2/`
 ```
-Dans ce cas, il faut avoir un serveur PHP local qui fait tourner Wordpress.
+(Dans ce cas, il faut avoir un serveur PHP local qui fait tourner Wordpress.)
 
 Soit directement sur la production:
 ```
 VUE_APP_API=https://fclesbrenets.ch/wordpress/wp-json/wp/v2/
 ```
 Ce n'est pas dangereux vu qu'on ne fait que des requêtes de lecture.
+
+Pour pouvoir récupérer la liste de sponsors, il faut aussi définir la variable `VUE_APP_GOOGLE_API_KEY` avec une clé d'API Google.
 
 Puis, compiler l'application à la volée:
 ```
