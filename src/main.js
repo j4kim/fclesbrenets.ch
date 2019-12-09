@@ -22,7 +22,7 @@ new Vue({
             posts: { _fields: "author,content,date,id,excerpt,slug,sticky,title" },
             pages: { _fields: "author,content,date,id,excerpt,slug,sticky,title,menu_order" },
             users: { _fields: "name,id" },
-            media: { _fields: "title,media_details", per_page: 100 }
+            media: { _fields: "title,media_details,source_url", per_page: 100 }
         },
         totalPages: {
             posts: undefined,

@@ -22,7 +22,7 @@ export default {
         },
         mediaSrc(){
             var sizes = this.media.media_details.sizes
-            return (sizes.medium || sizes.full).source_url
+            return (sizes.medium || sizes.full || this.media).source_url
         },
         contact(){
             return [
