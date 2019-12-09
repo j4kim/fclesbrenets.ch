@@ -60,5 +60,11 @@ export default {
                 font-size: 13px;
             }
         }
+        &.double {
+            grid-area: span 1 / span 2;
+        }
+        &.quad {
+            grid-area: span 2 / span 2;
+        }
     }
 </style>
