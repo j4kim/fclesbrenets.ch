@@ -38,6 +38,20 @@ export default {
 
 <style lang="scss">
     .sponsor{
+        &.double {
+            grid-area: span 1 / span 2;
+            font-size: 1.2em;
+            div.media img{
+                max-height: 100px;
+            }
+        }
+        &.quad {
+            grid-area: span 2 / span 2;
+            font-size: 1.3em;
+            div.media img{
+                max-height: 150px;
+            }
+        }
         &.inverted{
             background-color: #2c3e50;
             color: white;
@@ -55,16 +69,10 @@ export default {
             }
         }
         div.contact{
-            font-size: 11px;
+            font-size: .75em;
             &.no-media{
-                font-size: 13px;
+                font-size: .85em;
             }
-        }
-        &.double {
-            grid-area: span 1 / span 2;
-        }
-        &.quad {
-            grid-area: span 2 / span 2;
         }
     }
 </style>
