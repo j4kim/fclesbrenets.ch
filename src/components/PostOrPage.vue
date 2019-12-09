@@ -16,7 +16,11 @@
 
 <script>
 export default {
-    props:['postOrPage', 'backTo']
+    props:['postOrPage', 'backTo'],
+    mounted(){
+        var offset = document.querySelector("main").offsetTop
+        document.documentElement.scrollTop = offset
+    }
 }
 </script>
 
