@@ -51,6 +51,10 @@ export default {
 <style lang="scss" scoped>
     h1{
         color: white;
+        max-width: 400px;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 20px;
     }
     .sponsors-grid{
         display: grid;

@@ -43,7 +43,7 @@ export default {
             color: white;
         }
         background-color: white;
-        padding: 1rem;
+        padding: 10px;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -51,13 +51,13 @@ export default {
         div.media{
             img{
                 max-width: 100%;
-                max-height: 100px;
+                max-height: 80px;
             }
         }
         div.contact{
             font-size: 11px;
             &.no-media{
-                font-size: 14px;
+                font-size: 13px;
             }
         }
     }
