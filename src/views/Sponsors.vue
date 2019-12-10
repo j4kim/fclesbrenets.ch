@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>Nous remercions chaleureusement nos partenaires matériel:</h1>
+        <h1>Nous remercions chaleureusement nos partenaires matériel</h1>
         <div class="sponsors-grid">
             <sponsor
                 v-for="s in shuffledSponsors"
