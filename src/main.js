@@ -24,7 +24,7 @@ new Vue({
             users: { _fields: "name,id" },
             media: { _fields: "title,media_details,source_url", per_page: 100 }
         },
-        totalPages: {
+        hasMore: {
             posts: undefined,
             pages: undefined,
             users: undefined,
@@ -33,18 +33,19 @@ new Vue({
     },
     render: h => h(App),
     methods:{
-        fetchPage(resource, page = 1){
-            var params =  Object.assign({ page }, this.defaultParams[resource])
+        fetchPage(resource){
+            var offset = this[resource].length
+            var params =  Object.assign({ offset }, this.defaultParams[resource])
             var baseURL = process.env.VUE_APP_API
             return axios.get(resource, {baseURL, params}).then(result => {
                 this[resource] = this[resource].concat(result.data)
-                this.totalPages[resource] = result.headers["x-wp-totalpages"]
+                this.hasMore[resource] = result.headers["x-wp-total"] > this[resource].length
             })
         },
-        fetchAll(resource, pageToFetch = 1){
-            this.fetchPage(resource, pageToFetch).then(() => {
-                if(this.totalPages[resource] > pageToFetch){
-                    this.fetchAll(resource, pageToFetch + 1)
+        fetchAll(resource){
+            this.fetchPage(resource).then(() => {
+                if(this.hasMore[resource]){
+                    this.fetchAll(resource)
                 }
             })
         }
