@@ -51,9 +51,8 @@ const router = new Router({
   }
 })
 
-router.beforeEach((to, from, next) => {
+router.afterEach((to, from) => {
   to.meta.previous = from
-  next()
 })
 
 export default router
