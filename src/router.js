@@ -41,6 +41,8 @@ const router = new Router({
       name: 'sponsors',
       component: Sponsors
     }
+  ],
+})
 
 router.beforeEach((to, from, next) => {
   to.meta.previous = from
