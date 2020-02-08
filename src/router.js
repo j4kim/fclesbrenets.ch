@@ -8,7 +8,7 @@ import Sponsors from './views/Sponsors.vue'
 
 Vue.use(Router)
 
-export default new Router({
+const router = new Router({
   mode: 'history',
   base: process.env.BASE_URL,
   routes: [
@@ -41,5 +41,10 @@ export default new Router({
       name: 'sponsors',
       component: Sponsors
     }
-  ]
+
+router.beforeEach((to, from, next) => {
+  to.meta.previous = from
+  next()
 })
+
+export default router

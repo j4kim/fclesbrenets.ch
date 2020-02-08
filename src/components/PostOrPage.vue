@@ -1,8 +1,8 @@
 <template>
     <div>
-        <router-link :to="{name:backTo}" class="back-link">
+        <a @click="back" class="back-link">
             Retour
-        </router-link>
+        </a>
         <article v-if="postOrPage">
             <h1>{{ postOrPage.title.rendered }}</h1>
             <div v-html="postOrPage.content.rendered" />
@@ -23,6 +23,17 @@ export default {
     mounted(){
         var offset = document.querySelector("main").offsetTop
         setTimeout(() => document.documentElement.scrollTop = offset, 0)
+    },
+    methods: {
+        back(){
+            // if there is a previous page, just go back
+            // otherwise (user just popped on the page) we use backTo prop
+            if (this.$route.meta.previous.name) {
+                this.$router.back()
+            } else {
+                this.$router.push({name:this.backTo})
+            }
+        }
     }
 }
 </script>
