@@ -22,7 +22,7 @@ export default {
     props:['postOrPage', 'backTo', 'loading'],
     mounted(){
         var offset = document.querySelector("main").offsetTop
-        document.documentElement.scrollTop = offset
+        setTimeout(() => document.documentElement.scrollTop = offset, 0)
     }
 }
 </script>
