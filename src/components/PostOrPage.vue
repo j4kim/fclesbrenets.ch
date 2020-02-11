@@ -43,6 +43,7 @@ export default {
     margin: 10px 0;
     display: block;
     color:white;
+    cursor: pointer;
     &:before{
         content:"⬅";
         margin-right:4px;
