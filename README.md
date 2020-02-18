@@ -11,7 +11,7 @@ La console d'administration est à l'adresse [fclesbrenets.ch/wordpress/wp-admin
 
 ### Articles
 
-Depuis la console d'administration, le menu "Article" permet de modifier et ajouter des articels. Les articles apparaissent sous la section "News" sur le site.
+Depuis la console d'administration, le menu "Article" permet de modifier et ajouter des articles. Les articles apparaissent sous la section "News" sur le site.
 
 ### Pages
 
