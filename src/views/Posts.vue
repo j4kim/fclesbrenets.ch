@@ -31,7 +31,9 @@ export default {
     background-color: #057ec4;
     border: none;
     color: white;
-    font-size: 16px;
+    font-size: 1.2em;
+    display: block;
+    text-align: center;
     cursor: pointer;
     &:hover{
       color: #057ec4;
