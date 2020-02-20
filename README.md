@@ -11,7 +11,7 @@ La console d'administration est à l'adresse [fclesbrenets.ch/wordpress/wp-admin
 
 ### Articles
 
-Depuis la console d'administration, le menu "Article" permet de modifier et ajouter des articels. Les articles apparaissent sous la section "News" sur le site.
+Depuis la console d'administration, le menu "Article" permet de modifier et ajouter des articles. Les articles apparaissent sous la section "News" sur le site.
 
 ### Pages
 
@@ -28,7 +28,7 @@ Une image peut être liée à un sponsor. Pour cela:
 2. Copier le titre du média depuis la console d'adminstration;
 3. Coller le nom dans la colonne mediaTitle dans le classeur.
 
-Dans le classeur, la colonne "classes" permet d'afficher la brique d'un sponsor plus grand ou avec les couleurs inversées (dans le cas où le logo est blanc). La classe `2x1` fera que la brique est deux fois plus large que les autres. `1x2` la fera deux fois plus haute et `2x2` quadruple la surface de la brique. La classe `inverted` applique un fond bleu foncé avec le texte en blanc.
+Dans le classeur, la colonne "classes" permet d'afficher la brique d'un sponsor plus grand ou avec les couleurs inversées (dans le cas où le logo est blanc). La classe `double` fait que la brique est deux fois plus large que les autres, `quad` quadruple la surface de la brique. La classe `inverted` applique un fond bleu foncé avec le texte en blanc.
 
 ## Documentation développeur
 
@@ -49,7 +49,7 @@ Pour se connecter à la Google Sheets API:
 * [Une clé d'API](https://developers.google.com/sheets/api/guides/authorizing#APIKey)
 
 Pour le déploiement:
-* Un accès au serveur FTP (voir avec moi)
+* Un accès au serveur FTP (voir avec Joaquim)
 
 Pour avoir le back-end en local:
 * Environnement de développement PHP tout-en-un, exemple [XAMPP](https://www.apachefriends.org/fr/index.html)
@@ -65,7 +65,7 @@ npm install
 
 Le fichier `.env` à la racine du dossier du projet doit contenir la déclaration de la variable d'environnement `VUE_APP_API`. Cette variable doit cibler l'API REST de Wordpress, soit en local, exemple:
 ```
-VUE_APP_API=http://localhost:8080/fcb/wordpress/wp-json/wp/v2/`
+VUE_APP_API=http://localhost:8080/fcb/wordpress/wp-json/wp/v2/
 ```
 (Dans ce cas, il faut avoir un serveur PHP local qui fait tourner Wordpress.)
 
