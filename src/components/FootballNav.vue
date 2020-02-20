@@ -1,13 +1,13 @@
 <template>
     <nav>
         <div @click="changePage('posts', 'left')">
-            <span class="nav-link nav-posts" v-tooltip.bottom="'L\'actualité du club'">News</span>
+            <span class="nav-link nav-posts">News</span>
             <footballer ref="footballer-pages"/>
         </div>
         <ball class="ball"/>
         <div @click="changePage('pages', 'right')">
             <footballer ref="footballer-posts" :revert="true"/> 
-            <span class="nav-link nav-pages" v-tooltip.bottom="'Des informations générales'">Infos</span>
+            <span class="nav-link nav-pages">Infos</span>
         </div>
     </nav>
 </template>
