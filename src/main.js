@@ -21,7 +21,7 @@ new Vue({
         users: [],
         media: [],
         defaultParams: {
-            posts: { _fields: "author,content,date,id,excerpt,slug,sticky,title" },
+            posts: { _fields: "author,content,date,id,excerpt,slug,sticky,title", per_page: 5 },
             pages: { _fields: "author,content,date,id,excerpt,slug,sticky,title,menu_order" },
             users: { _fields: "name,id" },
             media: { _fields: "title,media_details,source_url", per_page: 100 }
