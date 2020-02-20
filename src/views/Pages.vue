@@ -1,6 +1,6 @@
 <template>
   <section class="pages">
-    <h1>Infos</h1>
+    <h1>Informations générales</h1>
     <div class="articles">
       <article v-for="article in orderedPages" :key="article.id">
         <h1><router-link :to="'infos/' + article.slug">{{ article.title.rendered }}</router-link ></h1>

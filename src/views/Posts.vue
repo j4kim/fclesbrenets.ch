@@ -1,6 +1,6 @@
 <template>
   <section class="posts">
-    <h1>News</h1>
+    <h1>L'actualité du club</h1>
     <article v-for="post in $root.posts" :key="post.id">
       <h1><router-link :to="'news/' + post.id">{{ post.title.rendered }}</router-link ></h1>
       <small>{{ getDate(post.date) }}</small>
