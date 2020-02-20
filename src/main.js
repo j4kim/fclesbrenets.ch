@@ -2,6 +2,8 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import axios from 'axios'
+import VTooltip from 'v-tooltip'
+Vue.use(VTooltip)
 import moment from 'moment'
 moment.locale('fr-ch')
 
