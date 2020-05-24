@@ -1,6 +1,6 @@
 {
-  "name": "fcb2019",
-  "version": "0.1.0",
+  "name": "fcb",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -17,8 +17,8 @@
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.8.0",
-    "@vue/cli-service": "^3.8.0",
-    "sass": "^1.18.0",
+    "@vue/cli-service": "^4.4.0",
+    "sass": "^1.26.5",
     "sass-loader": "^7.1.0",
     "vue-template-compiler": "^2.6.10"
   }
