@@ -23,6 +23,9 @@ export default {
     mounted(){
         var offset = document.querySelector("main").offsetTop
         setTimeout(() => document.documentElement.scrollTop = offset, 0)
+        if (this.postOrPage) {
+            this.updateTitle()
+        }
     },
     methods: {
         back(){
@@ -33,6 +36,14 @@ export default {
             } else {
                 this.$router.push({name:this.backTo})
             }
+        },
+        updateTitle(){
+            document.title = "FC Les Brenets | " + this.postOrPage.title.rendered
+        }
+    },
+    watch: {
+        postOrPage (newValue) {
+            this.updateTitle()
         }
     }
 }

@@ -21,6 +21,9 @@ export default {
     loadPage(){
       this.$root.fetchPage('posts')
     }
+  },
+  mounted() {
+    document.title = "FC Les Brenets | Actu"
   }
 }
 </script>

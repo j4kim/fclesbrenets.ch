@@ -19,6 +19,9 @@ export default {
     orderedPages(){
       return sortBy(this.$root.pages, 'menu_order')
     }
+  },
+  mounted() {
+    document.title = "FC Les Brenets | Infos"
   }
 }
 </script>
