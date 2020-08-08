@@ -17,7 +17,7 @@
 
 <script>
 import FootballNav from '@/components/FootballNav.vue'
-import Sponsors from '@/views/Sponsors.vue'
+import Sponsors from '@/components/Sponsors.vue'
 
 export default {
   components: { FootballNav, Sponsors }
