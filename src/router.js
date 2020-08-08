@@ -38,6 +38,11 @@ const router = new Router({
   ],
   scrollBehavior (to, from, savedPosition) {
     return savedPosition || { x: 0, y: 0 }
+  },
+  updateTitle (title) {
+    let newTitle = "FC Les Brenets | " + title
+    document.title = newTitle
+    document.querySelector("meta[property='og:title']").content = newTitle
   }
 })
 

@@ -23,7 +23,7 @@ export default {
     }
   },
   mounted() {
-    document.title = "FC Les Brenets | Actu"
+    this.$router.options.updateTitle("Actu")
   }
 }
 </script>

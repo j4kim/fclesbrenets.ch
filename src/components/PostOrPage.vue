@@ -38,7 +38,7 @@ export default {
             }
         },
         updateTitle(){
-            document.title = "FC Les Brenets | " + this.postOrPage.title.rendered
+            this.$router.options.updateTitle(this.postOrPage.title.rendered)
         }
     },
     watch: {
