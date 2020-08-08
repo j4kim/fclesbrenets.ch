@@ -1,7 +1,7 @@
 <template>
     <nav>
         <div @click="changePage('posts', 'left')">
-            <span class="nav-link nav-posts">News</span>
+            <span class="nav-link nav-posts">Actu</span>
             <footballer ref="footballer-pages"/>
         </div>
         <ball class="ball"/>
