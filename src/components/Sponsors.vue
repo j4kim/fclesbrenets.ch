@@ -53,8 +53,7 @@ export default {
         color: white;
         max-width: 400px;
         text-align: center;
-        margin: auto;
-        margin-bottom: 20px;
+        margin: 60px auto;
     }
     .sponsors-grid{
         display: grid;
