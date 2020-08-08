@@ -16,25 +16,25 @@ const router = new Router({
       path: '/',
       name: 'posts',
       component: Posts,
-      meta:{side:'left'}
+      meta: { side: 'left' }
     },
     {
       path: '/news/:id',
       name: 'post',
       component: Post,
-      meta:{side:'left'}
+      meta: { side: 'left' }
     },
     {
       path: '/infos',
       name: 'pages',
       component: Pages,
-      meta:{side:'right'}
+      meta: { side: 'right' }
     },
     {
       path: '/infos/:slug',
       name: 'page',
       component: Page,
-      meta:{side:'right'}
+      meta: { side: 'right' }
     },
     {
       path: '/sponsors',
@@ -43,11 +43,7 @@ const router = new Router({
     }
   ],
   scrollBehavior (to, from, savedPosition) {
-    if (savedPosition) {
-      return savedPosition
-    } else {
-      return { x: 0, y: 0 }
-    }
+    return savedPosition || { x: 0, y: 0 }
   }
 })
 
