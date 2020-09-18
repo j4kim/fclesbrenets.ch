@@ -20,6 +20,7 @@ import Colcade from 'colcade'
 
 export default {
   name: 'pages',
+  data: () => ({ colc: undefined }),
   computed:{
     orderedPages(){
       return sortBy(this.$root.pages, 'menu_order')
@@ -27,10 +28,17 @@ export default {
   },
   mounted() {
     this.$router.options.updateTitle("Infos")
-    new Colcade( '.grid', {
-      columns: '.grid-col',
-      items: '.grid-item'
-    });
+    this.initGrid()
+  },
+  updated() { this.initGrid() },
+  methods: {
+    initGrid() {
+      if (this.colc) { this.colc.destroy() }
+      this.colc = new Colcade( '.grid', {
+        columns: '.grid-col',
+        items: '.grid-item'
+      });
+    }
   }
 }
 </script>
