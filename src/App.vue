@@ -91,6 +91,8 @@ main{
       margin:0 0 5px;
     }
     img{
+      width: auto;
+      height: auto;
       max-width: 100%;
     }
     figcaption{
