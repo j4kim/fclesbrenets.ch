@@ -11,11 +11,11 @@ La console d'administration est à l'adresse [fclesbrenets.ch/wordpress/wp-admin
 
 ### Articles
 
-Depuis la console d'administration, le menu "Article" permet de modifier et ajouter des articles. Les articles apparaissent sous la section "News" sur le site.
+Depuis la console d'administration, le menu "Article" permet de modifier et ajouter des articles. Les articles apparaissent sous la section "Actu" sur le site.
 
 ### Pages
 
-Les pages sont affichées sous la sections "Infos" sur le site. Leur gestion est semblable aux articles.
+Les pages sont affichées sous la section "Infos" sur le site. Leur gestion est semblable aux articles.
 
 L'ordre des pages peut être modifiée par l'attribut "Ordre". Pour modifier cet attribut: dans la liste des pages -> Modification rapide -> Ordre.
 
