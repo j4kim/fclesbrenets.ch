@@ -83,12 +83,22 @@ main{
   article{
     break-inside: avoid;
     box-shadow: 0 3px 8px transparentize(black, 0.95);
-    padding:15px;
-    margin-bottom:20px;
+    padding: 20px 25px;
+    margin-bottom: 40px;
     transform: translateZ(0);
     background: white;
+    p {
+      margin: 0 0 10px;
+      line-height: 1.6;
+      font-size: 18px;
+    }
     h1{
-      margin:0 0 5px;
+      margin: 0;
+      font-size: 22px;
+      line-height: 1.2;
+    }
+    .article-content {
+      margin-top: 15px;
     }
     img{
       width: auto;

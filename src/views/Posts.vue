@@ -4,7 +4,7 @@
     <article v-for="post in $root.posts" :key="post.id">
       <h1><router-link :to="'news/' + post.id">{{ post.title.rendered }}</router-link ></h1>
       <small>{{ getDate(post.date) }}</small>
-      <div v-html="post.content.rendered" />
+      <div class="article-content" v-html="post.content.rendered" />
     </article>
     <a class="load-more-btn"
       v-if="$root.hasMore['posts']"
@@ -29,19 +29,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  .load-more-btn{
-    padding: 10px;
-    background-color: #057ec4;
-    border: none;
-    color: white;
-    font-size: 1.2em;
-    display: block;
-    text-align: center;
-    cursor: pointer;
-    &:hover{
-      color: #057ec4;
-      background-color: white;
-    }
+.load-more-btn{
+  padding: 10px;
+  background-color: #057ec4;
+  border: none;
+  color: white;
+  font-size: 1.2em;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  &:hover{
+    color: #057ec4;
+    background-color: white;
   }
+}
 </style>
 

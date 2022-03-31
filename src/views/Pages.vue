@@ -8,7 +8,7 @@
       <!-- items -->
       <article class="grid-item" v-for="article in orderedPages" :key="article.id">
         <h1><router-link :to="'infos/' + article.slug">{{ article.title.rendered }}</router-link ></h1>
-        <div v-html="article.content.rendered" />
+        <div class="article-content" v-html="article.content.rendered" />
       </article>
     </div>
   </section>
