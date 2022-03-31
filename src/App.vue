@@ -131,4 +131,24 @@ figure.wp-block-embed-youtube{
   }
 }
 
+
+
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 30px;
+  }
+  main article h1 {
+    font-size: 26px;
+  }
+
+  #app.posts, #app.post, #app.page {
+    main {
+      article {
+        padding: 30px 40px;
+        margin-bottom: 50px;
+      }
+    }
+  }
+}
+
 </style>
