@@ -131,6 +131,13 @@ figure.wp-block-embed-youtube{
   }
 }
 
+.has-text-align-center {
+  text-align: center;
+}
+
+.has-text-align-right {
+  text-align: right;
+}
 
 
 @media screen and (min-width: 800px) {
