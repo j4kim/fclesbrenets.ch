@@ -102,7 +102,7 @@ main{
 }
 
 .sponsors-container{
-  margin:20px;
+  padding:20px;
 }
 
 figure.wp-block-embed-youtube{
