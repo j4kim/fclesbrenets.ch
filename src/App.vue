@@ -52,6 +52,7 @@ body{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: $font-color;
+  font-size: 18px;
 }
 
 html{
@@ -90,7 +91,6 @@ main{
     p {
       margin: 0 0 10px;
       line-height: 1.6;
-      font-size: 18px;
     }
     h1{
       margin: 0;
