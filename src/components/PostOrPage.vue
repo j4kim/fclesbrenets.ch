@@ -5,7 +5,7 @@
         </a>
         <article v-if="postOrPage">
             <h1>{{ postOrPage.title.rendered }}</h1>
-            <div class="article-content" v-html="postOrPage.content.rendered" />
+            <article-content :html="postOrPage.content.rendered" />
         </article>
         <article v-else-if="loading">
             Chargement...

@@ -3,6 +3,7 @@ import App from './App.vue'
 import router from './router'
 import axios from 'axios'
 import moment from 'moment'
+import ArticleContent from './components/ArticleContent'
 moment.locale('fr-ch')
 
 Vue.mixin({
@@ -10,6 +11,8 @@ Vue.mixin({
         getDate: (ymd, format = 'L') => moment(ymd).format(format)
     }
 })
+
+Vue.component('article-content', ArticleContent)
 
 new Vue({
     router,
