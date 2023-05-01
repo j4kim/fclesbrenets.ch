@@ -3,8 +3,8 @@
         Chargement...
     </div>
     <div v-else>
-        <Matches :matches="lastMatches" heading="3 derniers matchs"/>
-        <Matches :matches="nextMatches" heading="3 prochains matchs"/>
+        <Matches :matches="lastMatches" heading="Derniers matchs:"/>
+        <Matches :matches="nextMatches" heading="Prochains matchs:"/>
     </div>
 </template>
 
