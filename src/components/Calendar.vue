@@ -1,5 +1,5 @@
 <template>
-    <div v-if="loading">
+    <div v-if="loading" class="loading">
         Chargement...
     </div>
     <div v-else>
@@ -54,3 +54,9 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+.loading {
+    height: 330px;
+}
+</style>
