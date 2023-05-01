@@ -1,11 +1,11 @@
 import Vue from "vue";
-
-Vue.component('calendar', {
-  template: '<i>Calendrier ici</i>'
-})
+import Calendar from "./Calendar";
 
 // Credit: https://adrianjost.medium.com/how-to-render-an-html-string-with-custom-vue-components-2c9989a81a1
 export default {
+  components: {
+    Calendar
+  },
   props: {
     html: {
       type: String,
