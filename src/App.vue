@@ -163,6 +163,10 @@ figure.wp-block-embed-youtube{
     font-size: 28px;
   }
 
+  figure {
+    margin: 1em 120px;
+  }
+
   #app.posts, #app.post, #app.page {
     main {
       article {
