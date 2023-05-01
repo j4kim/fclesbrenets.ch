@@ -94,6 +94,7 @@ main{
     margin-bottom: 40px;
     transform: translateZ(0);
     background: white;
+    container-type: inline-size;
     p {
       margin: 0 0 10px;
       line-height: 1.6;
@@ -148,10 +149,6 @@ figure.wp-block-embed-youtube{
 
 
 @media screen and (min-width: 1000px) {
-  body {
-    font-size: 20px;
-  }
-
   main {
     max-width: 1000px;
   }

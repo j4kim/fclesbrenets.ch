@@ -1,3 +1,4 @@
+<script>
 import Vue from "vue";
 import Calendar from "./Calendar";
 
@@ -38,3 +39,17 @@ export default {
     return this.templateRender();
   },
 };
+</script>
+
+<style>
+@container (min-width: 700px) {
+  .article-content {
+    font-size: 20px;
+  }
+}
+@container (max-width: 500px) {
+  .article-content {
+    font-size: 16px;
+  }
+}
+</style>
