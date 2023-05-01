@@ -9,8 +9,8 @@
     <main>  
       <router-view/>
     </main>
-    <div class="sponsors-container" v-if="$route.name !== 'sponsors'">
-      <sponsors/>
+    <div class="sponsors-container">
+      <sponsors v-if="sponsors && $route.name !== 'sponsors'"/>
     </div>
   </div>
 </template>
@@ -20,7 +20,13 @@ import FootballNav from '@/components/FootballNav.vue'
 import Sponsors from '@/components/Sponsors.vue'
 
 export default {
-  components: { FootballNav, Sponsors }
+  components: { FootballNav, Sponsors },
+
+  computed: {
+    sponsors() {
+      return process.env.VUE_APP_SPONSORS === 'true'
+    }
+  },
 }
 </script>
 
@@ -112,7 +118,8 @@ main{
 }
 
 .sponsors-container{
-  padding:20px;
+  padding: 20px;
+  min-height: 120px;
 }
 
 figure.wp-block-embed-youtube{
