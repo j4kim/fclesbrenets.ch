@@ -2,21 +2,23 @@
     <div v-if="loading" class="loading">
         Chargement...
     </div>
-    <div v-else>
-        <Matches :matches="lastMatches" heading="Derniers matchs:"/>
-        <Matches :matches="nextMatches" heading="Prochains matchs:"/>
-    </div>
+    <table v-else>
+        <tr><td colspan="3">Derniers matchs:</td></tr>
+        <Match v-for="match in lastMatches" :match="match"/>
+        <tr><td colspan="3">Prochains matchs:</td></tr>
+        <Match v-for="match in nextMatches" :match="match"/>
+    </table>
 </template>
 
 <script>
 import axios from 'axios'
 import moment from 'moment'
-import Matches from './Matches'
+import Match from './Match'
 
 const today = moment()
 
 export default {
-    components: { Matches },
+    components: { Match },
 
     data: () => ({
         matches: [],
