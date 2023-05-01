@@ -90,7 +90,7 @@ main{
   article{
     break-inside: avoid;
     box-shadow: 0 3px 8px transparentize(black, 0.95);
-    padding: 20px 25px;
+    padding: 24px;
     margin-bottom: 40px;
     transform: translateZ(0);
     background: white;
@@ -147,19 +147,35 @@ figure.wp-block-embed-youtube{
 }
 
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
+  body {
+    font-size: 20px;
+  }
+
+  main {
+    max-width: 1000px;
+  }
+
   h1 {
-    font-size: 30px;
+    font-size: 36px;
   }
   main article h1 {
-    font-size: 26px;
+    font-size: 28px;
   }
 
   #app.posts, #app.post, #app.page {
     main {
       article {
-        padding: 30px 40px;
-        margin-bottom: 50px;
+        padding: 60px;
+        margin-bottom: 60px;
+      }
+    }
+  }
+
+  #app.pages {
+    main {
+      article {
+        padding: 30px;
       }
     }
   }

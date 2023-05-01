@@ -67,7 +67,7 @@ export default {
 .grid-col--2 { display: none }
 
 /* 2 columns at medium size */
-@media ( min-width: 800px ) {
+@media ( min-width: 1000px ) {
   .grid-col { width: 50%; }
   .grid-col--2 { display: block; } /* show column 2 */
 }
