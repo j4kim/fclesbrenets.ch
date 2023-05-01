@@ -4,7 +4,7 @@
     <article v-for="post in $root.posts" :key="post.id">
       <h1><router-link :to="'news/' + post.id">{{ post.title.rendered }}</router-link ></h1>
       <small>{{ getDate(post.date) }}</small>
-      <div class="article-content" v-html="post.content.rendered" />
+      <article-content :html="post.content.rendered" />
     </article>
     <a class="load-more-btn"
       v-if="$root.hasMore['posts']"
