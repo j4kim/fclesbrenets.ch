@@ -3,8 +3,8 @@
         Chargement...
     </div>
     <div v-else>
-        <Matches :matches="lastMatches" heading="Derniers matchs:"/>
-        <Matches :matches="nextMatches" heading="Prochains matchs:"/>
+        <Matches :matches="lastMatches" heading="Derniers matchs:" />
+        <Matches :matches="nextMatches" heading="Prochains matchs:" />
     </div>
 </template>
 
@@ -17,6 +17,13 @@ const today = moment()
 
 export default {
     components: { Matches },
+
+    props: {
+        count: {
+            type: Number,
+            default: 3
+        }
+    },
 
     data: () => ({
         matches: [],
@@ -45,11 +52,11 @@ export default {
         },
 
         lastMatches() {
-            return this.pastMatches.slice(-3)
+            return this.pastMatches.slice(-this.count)
         },
 
         nextMatches() {
-            return this.futureMatches.slice(0, 3)
+            return this.futureMatches.slice(0, this.count)
         }
     }
 }
@@ -61,8 +68,8 @@ export default {
 }
 
 @container (max-width: 500px) {
-  table {
-    font-size: 14px;
-  }
+    table {
+        font-size: 14px;
+    }
 }
 </style>
