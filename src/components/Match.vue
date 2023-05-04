@@ -2,9 +2,11 @@
     <div>
         <span class="date">
             {{ formattedDate }}
-            <span v-if="match.time">à {{ match.time }}</span>
+            <span v-if="match.time"> à {{ match.time }} </span>
         </span>
-        {{ match.teamA }} - {{ match.teamB }}
+        <span :data-win="teamAWins"> {{ match.teamA }} </span>
+        -
+        <span :data-win="teamBWins"> {{ match.teamB }} </span>
         <span v-if="match.goalsA && match.goalsB">
             : {{ match.goalsA }} - {{ match.goalsB }}
         </span>
@@ -24,6 +26,8 @@ export default {
             const dd = ("" + (date.getDay() + 1)).padStart(2, "0")
             return `${dd}.${mm}`
         },
+        teamAWins() { return this.match.goalsA > this.match.goalsB },
+        teamBWins() { return this.match.goalsB > this.match.goalsA },
     }
 }
 </script>
@@ -31,5 +35,9 @@ export default {
 <style scoped>
 .date {
     opacity: 0.5;
+}
+
+[data-win] {
+    font-weight: bold;
 }
 </style>
