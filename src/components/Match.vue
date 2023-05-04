@@ -5,6 +5,9 @@
             <span v-if="match.time">à {{ match.time }}</span>
         </span>
         {{ match.teamA }} - {{ match.teamB }}
+        <span v-if="match.goalsA && match.goalsB">
+            : {{ match.goalsA }} - {{ match.goalsB }}
+        </span>
     </div>
 </template>
 
