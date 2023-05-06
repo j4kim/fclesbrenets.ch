@@ -22,8 +22,8 @@ export default {
     computed: {
         formattedDate() {
             const date = new Date(this.match.date)
+            const dd = ("" + (date.getDate())).padStart(2, "0")
             const mm = ("" + (date.getMonth() + 1)).padStart(2, "0")
-            const dd = ("" + (date.getDay() + 1)).padStart(2, "0")
             return `${dd}.${mm}`
         },
         teamAWins() { return this.match.goalsA > this.match.goalsB },
