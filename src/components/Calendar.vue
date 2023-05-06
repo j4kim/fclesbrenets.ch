@@ -66,10 +66,4 @@ export default {
 .loading {
     height: 330px;
 }
-
-@container (max-width: 500px) {
-    table {
-        font-size: 14px;
-    }
-}
 </style>
