@@ -29,13 +29,14 @@ export default {
 </script>
 
 <style scoped>
-.date {
-    opacity: 0.5;
-}
-
 div {
     display: flex;
     flex-wrap: wrap;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.date {
+    opacity: 0.5;
 }
 
 span {
