@@ -172,14 +172,5 @@ figure.wp-block-embed-youtube{
       }
     }
   }
-
-  #app.pages {
-    main {
-      article {
-        padding: 30px;
-      }
-    }
-  }
 }
-
 </style>
