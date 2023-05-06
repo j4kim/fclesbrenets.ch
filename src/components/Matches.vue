@@ -1,7 +1,7 @@
 <template>
-    <p>
+    <p class="matches">
         <i>{{ heading }}</i>
-        <Match v-for="match in matches" :match="match"/>
+        <Match v-for="match in matches" :match="match" :key="match.fdate" />
     </p>
 </template>
 
