@@ -31,7 +31,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,400i,700');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&family=Roboto:ital,wght@0,300;0,400;0,500;1,400&display=swap');
 
 $font-color:#2c3e50;
 $accent-color:#057ec4;
@@ -54,7 +54,7 @@ body{
   background-color:#cce0f4;
   background:url('../public/bg.svg') no-repeat center center fixed; ;
   background-size:cover;
-  font-family: 'Nunito', Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: $font-color;
