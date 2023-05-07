@@ -9,11 +9,11 @@
 </template>
 
 <script>
-import axios from 'axios'
-import moment from 'moment'
-import Matches from './Matches'
+import axios from "axios";
+import moment from "moment";
+import Matches from "./Matches";
 
-const today = moment()
+const today = moment();
 
 export default {
     components: { Matches },
@@ -21,45 +21,52 @@ export default {
     props: {
         count: {
             type: Number,
-            default: 3
-        }
+            default: 3,
+        },
     },
 
     data: () => ({
         matches: [],
-        loading: false
+        loading: false,
     }),
 
     created() {
-        var baseURL = process.env.VUE_APP_FOOTBALL_API
-        this.loading = true
-        return axios.get("matches", { baseURL }).then(result => {
-            this.matches = result.data
-        }).finally(() => (this.loading = false))
+        var baseURL = process.env.VUE_APP_FOOTBALL_API;
+        this.loading = true;
+        return axios
+            .get("matches", { baseURL })
+            .then((result) => {
+                this.matches = result.data;
+            })
+            .finally(() => (this.loading = false));
     },
 
     computed: {
         filteredMatches() {
-            return this.matches.filter(match => match.sppStatusText === null)
+            return this.matches.filter((match) => match.sppStatusText === null);
         },
 
         pastMatches() {
-            return this.filteredMatches.filter(match => moment(match.date).isBefore(today))
+            return this.filteredMatches.filter((match) =>
+                moment(match.date).isBefore(today)
+            );
         },
 
         futureMatches() {
-            return this.filteredMatches.filter(match => moment(match.date).isAfter(today))
+            return this.filteredMatches.filter((match) =>
+                moment(match.date).isAfter(today)
+            );
         },
 
         lastMatches() {
-            return this.pastMatches.slice(-this.count)
+            return this.pastMatches.slice(-this.count);
         },
 
         nextMatches() {
-            return this.futureMatches.slice(0, this.count)
-        }
-    }
-}
+            return this.futureMatches.slice(0, this.count);
+        },
+    },
+};
 </script>
 
 <style scoped>

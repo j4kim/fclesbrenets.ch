@@ -4,7 +4,9 @@
         <span :data-win="teamAWins">{{ match.teamA }}</span>
         <span>-</span>
         <span :data-win="teamBWins">{{ match.teamB }}</span>
-        <span v-if="match.goalsA">: {{ match.goalsA }} - {{ match.goalsB }}</span>
+        <span v-if="match.goalsA"
+            >: {{ match.goalsA }} - {{ match.goalsB }}</span
+        >
     </div>
 </template>
 
@@ -16,16 +18,20 @@ export default {
 
     computed: {
         formattedDate() {
-            const date = new Date(this.match.date)
-            const dd = ("" + (date.getDate())).padStart(2, "0")
-            const mm = ("" + (date.getMonth() + 1)).padStart(2, "0")
-            const time = this.match.time ? ` à ${this.match.time}` : ""
-            return `${dd}.${mm}${time}`
+            const date = new Date(this.match.date);
+            const dd = ("" + date.getDate()).padStart(2, "0");
+            const mm = ("" + (date.getMonth() + 1)).padStart(2, "0");
+            const time = this.match.time ? ` à ${this.match.time}` : "";
+            return `${dd}.${mm}${time}`;
         },
-        teamAWins() { return this.match.goalsA > this.match.goalsB },
-        teamBWins() { return this.match.goalsB > this.match.goalsA },
-    }
-}
+        teamAWins() {
+            return this.match.goalsA > this.match.goalsB;
+        },
+        teamBWins() {
+            return this.match.goalsB > this.match.goalsA;
+        },
+    },
+};
 </script>
 
 <style scoped>

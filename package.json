@@ -1,26 +1,26 @@
 {
-  "name": "fcb",
-  "version": "1.0.0",
-  "private": true,
-  "scripts": {
-    "serve": "vue-cli-service serve",
-    "deploy": "vue-cli-service build --mode deploy --dest deployable",
-    "xampp": "vue-cli-service build --mode xampp"
-  },
-  "dependencies": {
-    "axios": "^0.19.0",
-    "colcade": "^0.2.0",
-    "core-js": "^2.6.5",
-    "lodash": "^4.17.15",
-    "moment": "^2.24.0",
-    "vue": "^2.6.10",
-    "vue-router": "^3.0.3"
-  },
-  "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.8.0",
-    "@vue/cli-service": "^4.4.0",
-    "sass": "^1.26.5",
-    "sass-loader": "^7.1.0",
-    "vue-template-compiler": "^2.6.10"
-  }
+    "name": "fcb",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "serve": "vue-cli-service serve",
+        "deploy": "vue-cli-service build --mode deploy --dest deployable",
+        "xampp": "vue-cli-service build --mode xampp"
+    },
+    "dependencies": {
+        "axios": "^0.19.0",
+        "colcade": "^0.2.0",
+        "core-js": "^2.6.5",
+        "lodash": "^4.17.15",
+        "moment": "^2.24.0",
+        "vue": "^2.6.10",
+        "vue-router": "^3.0.3"
+    },
+    "devDependencies": {
+        "@vue/cli-plugin-babel": "^3.8.0",
+        "@vue/cli-service": "^4.4.0",
+        "sass": "^1.26.5",
+        "sass-loader": "^7.1.0",
+        "vue-template-compiler": "^2.6.10"
+    }
 }

@@ -19,45 +19,46 @@
 
 <script>
 export default {
-    props:['postOrPage', 'backTo', 'loading'],
-    mounted(){
-        var offset = document.querySelector("main").offsetTop
-        setTimeout(() => document.documentElement.scrollTop = offset, 0)
+    props: ["postOrPage", "backTo", "loading"],
+    mounted() {
+        var offset = document.querySelector("main").offsetTop;
+        setTimeout(() => (document.documentElement.scrollTop = offset), 0);
         if (this.postOrPage) {
-            this.updateTitle()
+            this.updateTitle();
         }
     },
     methods: {
-        back(){
+        back() {
             // if there is a previous page, just go back
             // otherwise (user just popped on the page) we use backTo prop
             if (this.$route.meta.previous.name) {
-                this.$router.back()
+                this.$router.back();
             } else {
-                this.$router.push({name:this.backTo})
+                this.$router.push({ name: this.backTo });
             }
         },
-        updateTitle(){
-            this.$router.options.updateTitle(this.postOrPage.title.rendered)
-        }
+        updateTitle() {
+            this.$router.options.updateTitle(this.postOrPage.title.rendered);
+        },
     },
     watch: {
-        postOrPage (newValue) {
-            this.updateTitle()
-        }
-    }
-}
+        postOrPage(newValue) {
+            this.updateTitle();
+        },
+    },
+};
 </script>
 
 <style lang="scss">
-.back-link{
+.back-link {
     margin: 10px 0;
     display: block;
-    color:white;
+    color: white;
     cursor: pointer;
-    &:before{
-        content:"⬅";
-        margin-right:4px;
+
+    &:before {
+        content: "⬅";
+        margin-right: 4px;
     }
 }
 </style>

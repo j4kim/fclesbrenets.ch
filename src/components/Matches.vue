@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import Match from './Match'
+import Match from "./Match";
 
 export default {
     components: { Match },
@@ -15,5 +15,5 @@ export default {
         matches: Array,
         heading: String,
     },
-}
+};
 </script>

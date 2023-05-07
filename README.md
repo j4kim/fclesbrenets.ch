@@ -6,8 +6,8 @@ La console d'administration est à l'adresse [fclesbrenets.ch/wordpress/wp-admin
 
 ### Prérequis
 
-* Un accès à la console d'administration
-* Un accès en lecture+écriture au dossier Google Drive FCB
+-   Un accès à la console d'administration
+-   Un accès en lecture+écriture au dossier Google Drive FCB
 
 ### Articles
 
@@ -24,6 +24,7 @@ L'ordre des pages peut être modifiée par l'attribut "Ordre". Pour modifier cet
 La liste des sponsors ([fclesbrenets.ch/sponsors](https://fclesbrenets.ch/sponsors)) provient d'un [classeur Google Sheets](https://docs.google.com/spreadsheets/d/1i94pLT9FZ4oqBYGKCiJMiBBsyq5CXaJtZ78XEWOSIM0/edit?usp=sharing), stocké sur le Drive du FC.
 
 Une image peut être liée à un sponsor. Pour cela:
+
 1. Ajouter l'image depuis l'onglet "Médias" sur la console d'adminstration;
 2. Copier le titre du média depuis la console d'adminstration;
 3. Coller le nom dans la colonne mediaTitle dans le classeur.
@@ -43,17 +44,21 @@ En production, Wordpress est dans un sous-dossier `wordpress` à la racine du r�
 ### Prérequis
 
 Pour construire l'application:
-* [npm](https://www.npmjs.com/get-npm)
+
+-   [npm](https://www.npmjs.com/get-npm)
 
 Pour se connecter à la Google Sheets API:
-* [Une clé d'API](https://developers.google.com/sheets/api/guides/authorizing#APIKey)
+
+-   [Une clé d'API](https://developers.google.com/sheets/api/guides/authorizing#APIKey)
 
 Pour le déploiement:
-* Un accès au serveur FTP (voir avec Joaquim)
+
+-   Un accès au serveur FTP (voir avec Joaquim)
 
 Pour avoir le back-end en local:
-* Environnement de développement PHP tout-en-un, exemple [XAMPP](https://www.apachefriends.org/fr/index.html)
-* Une installation de [Wordpress](https://wordpress.org/download/)
+
+-   Environnement de développement PHP tout-en-un, exemple [XAMPP](https://www.apachefriends.org/fr/index.html)
+-   Une installation de [Wordpress](https://wordpress.org/download/)
 
 ### Récupérer les dépendances JavaScript
 
@@ -64,24 +69,30 @@ npm install
 ### Lancer sur un serveur Local
 
 Le fichier `.env` à la racine du dossier du projet doit contenir la déclaration de la variable d'environnement `VUE_APP_API`. Cette variable doit cibler l'API REST de Wordpress, soit en local, exemple:
+
 ```
 VUE_APP_API=http://localhost:8080/fcb/wordpress/wp-json/wp/v2/
 ```
+
 (Dans ce cas, il faut avoir un serveur PHP local qui fait tourner Wordpress.)
 
 Soit directement sur la production:
+
 ```
 VUE_APP_API=https://fclesbrenets.ch/wordpress/wp-json/wp/v2/
 ```
+
 Ce n'est pas dangereux vu qu'on ne fait que des requêtes de lecture.
 
 Pour pouvoir récupérer la liste de sponsors, il faut aussi définir la variable `VUE_APP_GOOGLE_API_KEY` avec une clé d'API Google.
 
 Puis, compiler l'application à la volée:
+
 ```
 npm run serve
 ```
-Cette commande lance un serveur local avec *hot-reload*.
+
+Cette commande lance un serveur local avec _hot-reload_.
 
 ### Déploiement
 
