@@ -57,7 +57,7 @@ export default {
 
 <style lang="scss">
 .grid {
-    margin: 0 -10px;
+    margin: 0 -0.6rem;
 }
 
 .grid-col {
@@ -72,7 +72,7 @@ export default {
 }
 
 .grid-item {
-    margin: 0 10px 20px;
+    margin: 0 0.6rem 1rem;
 }
 
 /* 1 column, hide columns 2 */
@@ -86,10 +86,9 @@ export default {
         width: 50%;
     }
 
+    /* show column 2 */
     .grid-col--2 {
         display: block;
     }
-
-    /* show column 2 */
 }
 </style>

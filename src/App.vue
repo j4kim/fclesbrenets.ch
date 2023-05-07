@@ -61,7 +61,6 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: $font-color;
-    font-size: 18px;
 }
 
 html {
@@ -84,35 +83,28 @@ header {
 main {
     border-top: 1px solid $font-color;
     border-bottom: 1px solid $font-color;
-    padding: 20px;
+    padding: 0.6rem;
     width: 100%;
-    max-width: 800px;
     margin: auto;
-    /* IE compatibility */
     display: block;
 
     article {
         break-inside: avoid;
         box-shadow: 0 3px 8px transparentize(black, 0.95);
-        padding: 24px;
-        margin-bottom: 40px;
+        padding: 1rem;
+        margin-bottom: 1rem;
         transform: translateZ(0);
         background: white;
         container-type: inline-size;
 
         p {
-            margin: 0 0 10px;
+            margin: 0.6rem 0;
             line-height: 1.6;
         }
 
         h1 {
             margin: 0;
-            font-size: 22px;
             line-height: 1.2;
-        }
-
-        .article-content {
-            margin-top: 15px;
         }
 
         img {
@@ -157,32 +149,23 @@ figure.wp-block-embed-youtube {
     text-align: right;
 }
 
+@media screen and (min-width: 700px) {
+    main {
+        max-width: 640px;
+    }
+
+    :root {
+        font-size: 18px;
+    }
+}
+
 @media screen and (min-width: 1000px) {
     main {
-        max-width: 1000px;
+        max-width: 920px;
     }
 
-    h1 {
-        font-size: 36px;
-    }
-
-    main article h1 {
-        font-size: 28px;
-    }
-
-    figure {
-        margin: 1em 120px;
-    }
-
-    #app.posts,
-    #app.post,
-    #app.page {
-        main {
-            article {
-                padding: 60px;
-                margin-bottom: 60px;
-            }
-        }
+    :root {
+        font-size: 20px;
     }
 }
 </style>
