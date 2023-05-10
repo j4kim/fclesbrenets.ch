@@ -5,6 +5,7 @@
     <div v-else>
         <Matches :matches="lastMatches" heading="Derniers matchs:" />
         <Matches :matches="nextMatches" heading="Prochains matchs:" />
+        <p class="time">Données du {{ time }}</p>
     </div>
 </template>
 
@@ -27,6 +28,7 @@ export default {
 
     data: () => ({
         matches: [],
+        time: null,
         loading: false,
     }),
 
@@ -36,7 +38,8 @@ export default {
         return axios
             .get("matches", { baseURL })
             .then((result) => {
-                this.matches = result.data;
+                this.matches = result.data.matches;
+                this.time = moment(result.data.time * 1000).format("LLL");
             })
             .finally(() => (this.loading = false));
     },
@@ -72,5 +75,10 @@ export default {
 <style scoped>
 .loading {
     height: 330px;
+}
+.time {
+    font-size: 14px;
+    font-style: italic;
+    opacity: 0.5;
 }
 </style>
