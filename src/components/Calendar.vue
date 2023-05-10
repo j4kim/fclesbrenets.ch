@@ -5,7 +5,9 @@
     <div v-else>
         <Matches :matches="lastMatches" heading="Derniers matchs:" />
         <Matches :matches="nextMatches" heading="Prochains matchs:" />
-        <p class="time">Données du {{ time }}</p>
+        <p class="time" @dblclick="load(true)">
+            Données de l'ANF récupérées le {{ time }}
+        </p>
     </div>
 </template>
 
@@ -33,15 +35,22 @@ export default {
     }),
 
     created() {
-        var baseURL = process.env.VUE_APP_FOOTBALL_API;
-        this.loading = true;
-        return axios
-            .get("matches", { baseURL })
-            .then((result) => {
-                this.matches = result.data.matches;
-                this.time = moment(result.data.time * 1000).format("LLL");
-            })
-            .finally(() => (this.loading = false));
+        this.load();
+    },
+
+    methods: {
+        load(fresh = false) {
+            var baseURL = process.env.VUE_APP_FOOTBALL_API;
+            var path = fresh ? "matches/fresh" : "matches";
+            this.loading = true;
+            return axios
+                .get(path, { baseURL })
+                .then((result) => {
+                    this.matches = result.data.matches;
+                    this.time = moment(result.data.time * 1000).format("LLL");
+                })
+                .finally(() => (this.loading = false));
+        },
     },
 
     computed: {
@@ -74,7 +83,7 @@ export default {
 
 <style scoped>
 .loading {
-    height: 330px;
+    height: 340px;
 }
 .time {
     font-size: 14px;
