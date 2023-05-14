@@ -60,13 +60,13 @@ export default {
 
         pastMatches() {
             return this.filteredMatches.filter((match) =>
-                moment(match.date).isBefore(today)
+                moment(match.datetime).isBefore(today)
             );
         },
 
         futureMatches() {
             return this.filteredMatches.filter((match) =>
-                moment(match.date).isAfter(today)
+                moment(match.datetime).isAfter(today)
             );
         },
 
