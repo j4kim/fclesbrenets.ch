@@ -5,6 +5,9 @@
     <div v-else>
         <Matches :matches="lastMatches" heading="Derniers matchs:" />
         <Matches :matches="nextMatches" heading="Prochains matchs:" />
+        <p class="time" @dblclick="load(true)">
+            Données de l'ANF récupérées le {{ time }}
+        </p>
     </div>
 </template>
 
@@ -27,18 +30,27 @@ export default {
 
     data: () => ({
         matches: [],
+        time: null,
         loading: false,
     }),
 
     created() {
-        var baseURL = process.env.VUE_APP_FOOTBALL_API;
-        this.loading = true;
-        return axios
-            .get("matches", { baseURL })
-            .then((result) => {
-                this.matches = result.data;
-            })
-            .finally(() => (this.loading = false));
+        this.load();
+    },
+
+    methods: {
+        load(fresh = false) {
+            var baseURL = process.env.VUE_APP_FOOTBALL_API;
+            var path = fresh ? "matches/fresh" : "matches";
+            this.loading = true;
+            return axios
+                .get(path, { baseURL })
+                .then((result) => {
+                    this.matches = result.data.matches;
+                    this.time = moment(result.data.time * 1000).format("LLL");
+                })
+                .finally(() => (this.loading = false));
+        },
     },
 
     computed: {
@@ -48,13 +60,13 @@ export default {
 
         pastMatches() {
             return this.filteredMatches.filter((match) =>
-                moment(match.date).isBefore(today)
+                moment(match.datetime).isBefore(today)
             );
         },
 
         futureMatches() {
             return this.filteredMatches.filter((match) =>
-                moment(match.date).isAfter(today)
+                moment(match.datetime).isAfter(today)
             );
         },
 
@@ -71,6 +83,11 @@ export default {
 
 <style scoped>
 .loading {
-    height: 330px;
+    height: 340px;
+}
+.time {
+    font-size: 14px;
+    font-style: italic;
+    opacity: 0.5;
 }
 </style>
