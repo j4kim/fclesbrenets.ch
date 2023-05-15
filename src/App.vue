@@ -31,46 +31,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&family=Roboto:ital,wght@0,300;0,400;0,500;1,400&display=swap");
-
-$font-color: #2c3e50;
-$accent-color: #057ec4;
-
-* {
-    box-sizing: border-box;
-}
-
-a {
-    color: $accent-color;
-    text-decoration: none;
-}
-
-body,
-html {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    height: 100vh;
-    overflow: auto;
-    background-color: #cce0f4;
-    background: url("../public/bg.svg") no-repeat center center fixed;
-    background-size: cover;
-    font-family: "Roboto", Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    color: $font-color;
-}
-
-html {
-    background: none;
-}
-
-#app {
-    min-width: 280px;
-}
-
 header {
     text-align: center;
 
@@ -81,8 +41,8 @@ header {
 }
 
 main {
-    border-top: 1px solid $font-color;
-    border-bottom: 1px solid $font-color;
+    border-top: 1px solid var(--font-color);
+    border-bottom: 1px solid var(--font-color);
     padding: 0.6rem;
     width: 100%;
     margin: auto;
@@ -112,41 +72,12 @@ main {
             height: auto;
             max-width: 100%;
         }
-
-        figcaption {
-            font-style: italic;
-        }
     }
 }
 
 .sponsors-container {
     padding: 20px;
     min-height: 120px;
-}
-
-figure.wp-block-embed-youtube {
-    div.wp-block-embed__wrapper {
-        position: relative;
-        width: 100%;
-        height: 0;
-        padding-bottom: 56.25%;
-
-        iframe {
-            position: absolute;
-            left: 0;
-            top: 0;
-            height: 100%;
-            width: 100%;
-        }
-    }
-}
-
-.has-text-align-center {
-    text-align: center;
-}
-
-.has-text-align-right {
-    text-align: right;
 }
 
 @media screen and (min-width: 700px) {
