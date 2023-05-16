@@ -1,5 +1,5 @@
 <template>
-    <section class="posts">
+    <div class="posts">
         <h1>L'actualité du club</h1>
         <article-wrapper
             v-for="post in $root.posts"
@@ -16,7 +16,7 @@
         >
             Charger plus
         </a>
-    </section>
+    </div>
 </template>
 
 <script>

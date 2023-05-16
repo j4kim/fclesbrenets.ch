@@ -1,5 +1,5 @@
 <template>
-    <section class="pages">
+    <div class="pages">
         <h1>Informations générales</h1>
         <div class="articles grid">
             <!-- columns -->
@@ -15,7 +15,7 @@
                 :link="'infos/' + article.slug"
             />
         </div>
-    </section>
+    </div>
 </template>
 
 <script>
