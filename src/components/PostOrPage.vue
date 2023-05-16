@@ -3,22 +3,23 @@
         <a @click="back" class="back-link">
             Retour
         </a>
-        <article v-if="postOrPage">
-            <h1>{{ postOrPage.title.rendered }}</h1>
-            <article-content :html="postOrPage.content.rendered" />
-        </article>
-        <article v-else-if="loading">
-            Chargement...
-        </article>
-        <article v-else>
-            La page est introuvable
-        </article>
+        <h1>{{ postOrPage.title.rendered }}</h1>
+        <article-wrapper
+            v-if="postOrPage"
+            :content="postOrPage.content.rendered"
+        >
+        </article-wrapper>
+        <article-wrapper v-else-if="loading" content="Chargement..." />
+        <article-wrapper v-else content="La page est introuvable" />
         <slot></slot>
     </div>
 </template>
 
 <script>
+import ArticleWrapper from "./ArticleWrapper.vue";
+
 export default {
+    components: { ArticleWrapper },
     props: ["postOrPage", "backTo", "loading"],
     mounted() {
         var offset = document.querySelector("main").offsetTop;

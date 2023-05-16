@@ -1,8 +1,9 @@
 <template>
     <div class="article-wrapper">
         <article>
-            <h2>
-                <router-link :to="link">{{ title }}</router-link>
+            <h2 v-if="title">
+                <router-link v-if="link" :to="link">{{ title }}</router-link>
+                <template v-else>{{ title }}</template>
             </h2>
             <small v-if="date">{{ date }}</small>
             <article-content :html="content" />
