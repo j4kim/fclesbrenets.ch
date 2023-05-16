@@ -47,32 +47,6 @@ main {
     width: 100%;
     margin: auto;
     display: block;
-
-    article {
-        break-inside: avoid;
-        box-shadow: 0 3px 8px transparentize(black, 0.95);
-        padding: 1rem;
-        margin-bottom: 1rem;
-        transform: translateZ(0);
-        background: white;
-        container-type: inline-size;
-
-        p {
-            margin: 0.6rem 0;
-            line-height: 1.6;
-        }
-
-        h1 {
-            margin: 0;
-            line-height: 1.2;
-        }
-
-        img {
-            width: auto;
-            height: auto;
-            max-width: 100%;
-        }
-    }
 }
 
 .sponsors-container {

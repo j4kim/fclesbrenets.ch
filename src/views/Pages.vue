@@ -6,18 +6,14 @@
             <div class="grid-col grid-col--1"></div>
             <div class="grid-col grid-col--2"></div>
             <!-- items -->
-            <article
+            <article-wrapper
                 class="grid-item"
                 v-for="article in orderedPages"
                 :key="article.id"
-            >
-                <h1>
-                    <router-link :to="'infos/' + article.slug">{{
-                        article.title.rendered
-                    }}</router-link>
-                </h1>
-                <article-content :html="article.content.rendered" />
-            </article>
+                :content="article.content.rendered"
+                :title="article.title.rendered"
+                :link="'infos/' + article.slug"
+            />
         </div>
     </section>
 </template>
@@ -25,9 +21,11 @@
 <script>
 import { sortBy } from "lodash";
 import Colcade from "colcade";
+import ArticleWrapper from "@/components/ArticleWrapper.vue";
 
 export default {
     name: "pages",
+    components: { ArticleWrapper },
     data: () => ({ colc: undefined }),
     computed: {
         orderedPages() {
