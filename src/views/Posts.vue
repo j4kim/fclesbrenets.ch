@@ -37,6 +37,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.article-wrapper {
+    margin-bottom: 1em;
+}
 .load-more-btn {
     padding: 10px;
     background-color: #057ec4;

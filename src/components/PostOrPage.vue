@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="post-or-page">
         <a @click="back" class="back-link">
             Retour
         </a>
@@ -51,6 +51,10 @@ export default {
 </script>
 
 <style lang="scss">
+.article-wrapper {
+    margin-bottom: 1em;
+}
+
 .back-link {
     margin: 10px 0;
     display: block;

@@ -1,6 +1,6 @@
 <template>
-    <div id="app" :class="$route.name + ' ball-' + $route.meta.side">
-        <header>
+    <div id="app" :class="`ball-${$route.meta.side}`" :data-route="$route.name">
+        <header class="app-header">
             <a href="/">
                 <img alt="logo du FCB" src="./assets/logoFCB.svg" />
             </a>
@@ -31,7 +31,7 @@ export default {
 </script>
 
 <style lang="scss">
-header {
+header.app-header {
     text-align: center;
 
     img {
@@ -58,19 +58,11 @@ main {
     main {
         max-width: 640px;
     }
-
-    :root {
-        font-size: 18px;
-    }
 }
 
 @media screen and (min-width: 1000px) {
     main {
         max-width: 920px;
-    }
-
-    :root {
-        font-size: 20px;
     }
 }
 </style>
