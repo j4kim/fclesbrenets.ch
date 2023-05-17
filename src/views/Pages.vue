@@ -1,33 +1,31 @@
 <template>
-    <section class="pages">
+    <div class="pages">
         <h1>Informations générales</h1>
         <div class="articles grid">
             <!-- columns -->
             <div class="grid-col grid-col--1"></div>
             <div class="grid-col grid-col--2"></div>
             <!-- items -->
-            <article
+            <article-wrapper
                 class="grid-item"
                 v-for="article in orderedPages"
                 :key="article.id"
-            >
-                <h1>
-                    <router-link :to="'infos/' + article.slug">{{
-                        article.title.rendered
-                    }}</router-link>
-                </h1>
-                <article-content :html="article.content.rendered" />
-            </article>
+                :content="article.content.rendered"
+                :title="article.title.rendered"
+                :link="'infos/' + article.slug"
+            />
         </div>
-    </section>
+    </div>
 </template>
 
 <script>
 import { sortBy } from "lodash";
 import Colcade from "colcade";
+import ArticleWrapper from "@/components/ArticleWrapper.vue";
 
 export default {
     name: "pages",
+    components: { ArticleWrapper },
     data: () => ({ colc: undefined }),
     computed: {
         orderedPages() {
@@ -57,7 +55,7 @@ export default {
 
 <style lang="scss">
 .grid {
-    margin: 0 -10px;
+    margin: 0 -0.6em;
 }
 
 .grid-col {
@@ -72,7 +70,7 @@ export default {
 }
 
 .grid-item {
-    margin: 0 10px 20px;
+    margin: 0 0.6em 1em;
 }
 
 /* 1 column, hide columns 2 */
@@ -86,10 +84,9 @@ export default {
         width: 50%;
     }
 
+    /* show column 2 */
     .grid-col--2 {
         display: block;
     }
-
-    /* show column 2 */
 }
 </style>

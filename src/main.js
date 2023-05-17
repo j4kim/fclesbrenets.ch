@@ -4,6 +4,8 @@ import router from "./router";
 import axios from "axios";
 import moment from "moment";
 import ArticleContent from "./components/ArticleContent";
+import "./styles.scss";
+
 moment.locale("fr-ch");
 
 Vue.mixin({

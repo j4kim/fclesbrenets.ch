@@ -1,15 +1,14 @@
 <template>
-    <section class="posts">
+    <div class="posts">
         <h1>L'actualité du club</h1>
-        <article v-for="post in $root.posts" :key="post.id">
-            <h1>
-                <router-link :to="'news/' + post.id">{{
-                    post.title.rendered
-                }}</router-link>
-            </h1>
-            <small>{{ getDate(post.date) }}</small>
-            <article-content :html="post.content.rendered" />
-        </article>
+        <article-wrapper
+            v-for="post in $root.posts"
+            :key="post.id"
+            :content="post.content.rendered"
+            :title="post.title.rendered"
+            :link="'news/' + post.id"
+            :date="getDate(post.date)"
+        />
         <a
             class="load-more-btn"
             v-if="$root.hasMore['posts']"
@@ -17,12 +16,15 @@
         >
             Charger plus
         </a>
-    </section>
+    </div>
 </template>
 
 <script>
+import ArticleWrapper from "@/components/ArticleWrapper.vue";
+
 export default {
     name: "posts",
+    components: { ArticleWrapper },
     methods: {
         loadPage() {
             this.$root.fetchPage("posts");
@@ -35,6 +37,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.article-wrapper {
+    margin-bottom: 1em;
+}
 .load-more-btn {
     padding: 10px;
     background-color: #057ec4;
