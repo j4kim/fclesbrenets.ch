@@ -1,12 +1,15 @@
 <template>
-    <div>
+    <div :class="['match', match.goalsA ? 'played' : '']">
         <span class="date">{{ formattedDate }}</span>
-        <span :data-win="teamAWins">{{ match.teamA }}</span>
-        <span>-</span>
-        <span :data-win="teamBWins">{{ match.teamB }}</span>
-        <span v-if="match.goalsA"
-            >: {{ match.goalsA }} - {{ match.goalsB }}</span
-        >
+        <span class="team-a" :data-win="teamAWins">{{ match.teamA }}</span>
+        <span class="hyphen-1 punctuation">-</span>
+        <span class="team-b" :data-win="teamBWins">{{ match.teamB }}</span>
+        <template v-if="match.goalsA">
+            <span class="colon punctuation">:</span>
+            <span class="goals goals-a">{{ match.goalsA }}</span>
+            <span class="hyphen-2 punctuation">-</span>
+            <span class="goals goals-b">{{ match.goalsB }}</span>
+        </template>
     </div>
 </template>
 
@@ -34,23 +37,51 @@ export default {
 };
 </script>
 
-<style scoped>
-div {
+<style lang="scss">
+.match {
     display: flex;
-    flex-wrap: wrap;
-    font-family: "Roboto Condensed", sans-serif;
-}
+    gap: 0.3em;
 
-.date {
-    opacity: 0.5;
-}
+    .date {
+        opacity: 0.5;
+    }
 
-span {
-    white-space: nowrap;
-    margin-right: 0.3em;
-}
+    span {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 
-[data-win] {
-    font-weight: bold;
+    [data-win] {
+        font-weight: bold;
+    }
+
+    @container (max-width: 700px) {
+        flex-wrap: wrap;
+        line-height: 1.1;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+        gap: 0.2em;
+        .date {
+            width: 100%;
+        }
+    }
+
+    @container (max-width: 480px) {
+        display: grid;
+        grid-template-columns: 90% 10%;
+
+        .punctuation {
+            display: none;
+        }
+
+        .date {
+            grid-column: 1 / 3;
+        }
+
+        .team-b {
+            grid-row: 3;
+        }
+    }
 }
 </style>
