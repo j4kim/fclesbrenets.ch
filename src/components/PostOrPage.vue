@@ -3,12 +3,10 @@
         <a @click="back" class="back-link">
             Retour
         </a>
-        <h1>{{ postOrPage.title.rendered }}</h1>
-        <article-wrapper
-            v-if="postOrPage"
-            :content="postOrPage.content.rendered"
-        >
-        </article-wrapper>
+        <template v-if="postOrPage">
+            <h1>{{ postOrPage.title.rendered }}</h1>
+            <article-wrapper :content="postOrPage.content.rendered" />
+        </template>
         <article-wrapper v-else-if="loading" content="Chargement..." />
         <article-wrapper v-else content="La page est introuvable" />
         <slot></slot>
