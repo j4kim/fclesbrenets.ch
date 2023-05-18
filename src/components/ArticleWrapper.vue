@@ -1,6 +1,6 @@
 <template>
     <div class="article-wrapper">
-        <article>
+        <article :class="`size-${sizeClass}`">
             <header v-if="title || date">
                 <h2>
                     <router-link v-if="link" :to="link">{{
@@ -19,12 +19,35 @@
 export default {
     name: "article-wrapper",
     props: ["content", "title", "link", "date"],
+
+    data: () => ({
+        width: 0,
+    }),
+
+    mounted() {
+        new ResizeObserver((entries) => {
+            this.width = entries[0].contentRect.width;
+        }).observe(this.$el);
+    },
+
+    computed: {
+        sizeClass() {
+            if (this.width < 420) {
+                return "xs";
+            } else if (this.width < 600) {
+                return "s";
+            } else if (this.width < 800) {
+                return "m";
+            } else {
+                return "l";
+            }
+        },
+    },
 };
 </script>
 
 <style lang="scss">
 .article-wrapper {
-    container-type: inline-size;
     article {
         break-inside: avoid;
         padding: 1em;
@@ -42,14 +65,14 @@ export default {
 
         --p-spacing: 0.6em;
 
-        @container (min-width: 600px) {
+        &.size-m {
             padding: 2em;
             font-size: 18px;
 
             --p-spacing: 1em;
         }
 
-        @container (min-width: 800px) {
+        &.size-l {
             padding: 2.8em;
             font-size: 20px;
         }
