@@ -55,32 +55,40 @@ export default {
     [data-win] {
         font-weight: bold;
     }
+}
 
-    @container (max-width: 700px) {
-        flex-wrap: wrap;
-        line-height: 1.1;
-        margin-top: 0.5em;
-        margin-bottom: 0.5em;
-        gap: 0.2em;
-        .date {
-            width: 100%;
+article {
+    &.size-xs,
+    &.size-s,
+    &.size-m {
+        .match {
+            flex-wrap: wrap;
+            line-height: 1.1;
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+            gap: 0.2em;
+            .date {
+                width: 100%;
+            }
         }
     }
 
-    @container (max-width: 480px) {
-        display: grid;
-        grid-template-columns: 90% 10%;
+    &.size-xs {
+        .match {
+            display: grid;
+            grid-template-columns: 90% 10%;
 
-        .punctuation {
-            display: none;
-        }
+            .punctuation {
+                display: none;
+            }
 
-        .date {
-            grid-column: 1 / 3;
-        }
+            .date {
+                grid-column: 1 / 3;
+            }
 
-        .team-b {
-            grid-row: 3;
+            .team-b {
+                grid-row: 3;
+            }
         }
     }
 }
