@@ -4,7 +4,7 @@
         <span class="team-a" :data-win="teamAWins">{{ match.teamA }}</span>
         <span class="hyphen-1 punctuation">-</span>
         <span class="team-b" :data-win="teamBWins">{{ match.teamB }}</span>
-        <template v-if="match.goalsA">
+        <template v-if="match.goalsA !== null">
             <span class="colon punctuation">:</span>
             <span class="goals goals-a">{{ match.goalsA }}</span>
             <span class="hyphen-2 punctuation">-</span>
