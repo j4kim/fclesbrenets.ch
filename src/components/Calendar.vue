@@ -1,7 +1,5 @@
 <template>
-    <div v-if="loading" class="loading">
-        Chargement...
-    </div>
+    <div v-if="loading" class="loading">Chargement...</div>
     <div v-else>
         <Matches :matches="lastMatches" heading="Derniers matchs:" />
         <Matches :matches="nextMatches" heading="Prochains matchs:" />
@@ -41,7 +39,7 @@ export default {
     methods: {
         load(fresh = false) {
             var baseURL = process.env.VUE_APP_FOOTBALL_API;
-            var path = fresh ? "matches/fresh" : "matches";
+            var path = "matches/anf/907/34040?fresh=" + (fresh ? "1" : "0");
             this.loading = true;
             return axios
                 .get(path, { baseURL })
