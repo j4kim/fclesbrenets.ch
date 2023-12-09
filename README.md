@@ -104,6 +104,12 @@ Cette commande constuit l'application dans le dossier `deployable`, en utilisant
 
 Le contenu de ce dossier peut être copié sur le serveur de production.
 
+### Récupration du calendrier
+
+Le composant [`Calendar.vue`](src/components/Calendar.vue) récupère les données de l'ANF via [football.ch-scraping](https://github.com/j4kim/football.ch-scraping).
+
+Ce composant peut être utilisé depuis le contenu de la page [Première équipe](https://fclesbrenets.ch/wordpress/wp-admin/post.php?post=36&action=edit) sur Wordpress, grâce au composant spécial [`ArticleContent.vue`](src/components/ArticleContent.vue) qui compile le contenu html retourné par Wordpress.
+
 ### Contribution
 
 Une liste des idées et tâches existe sur le [projet kanban](https://github.com/j4kim/fcb/projects/1) sur GitHub.
