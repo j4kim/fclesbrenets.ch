@@ -61,6 +61,7 @@ export default {
         h2 {
             margin: 0;
             line-height: 1.2;
+            font-family: "Roboto Slab", serif;
         }
 
         --p-spacing: 0.6em;
