@@ -9,13 +9,21 @@ if (isset($input['to'])) {
     $to = "home";
 }
 
+if (isset($input['from'])) {
+    $from = $input['from'];
+    unset($input['from']);
+} else {
+    $from = "unknown";
+}
+
 $url = match ($to) {
     'home' => "/",
-    'inscription-tournoi-2026' => "https://docs.google.com/forms/d/e/1FAIpQLSe_aajcQLGWmIsqdwB4gDiJhp4OEMVJ1UAS0Z1zCLud65s5Fw/viewform",
+    'inscription-2026' => "https://docs.google.com/forms/d/e/1FAIpQLSe_aajcQLGWmIsqdwB4gDiJhp4OEMVJ1UAS0Z1zCLud65s5Fw/viewform",
+    'sponsoring-2026' => "https://docs.google.com/forms/d/e/1FAIpQLSe_aajcQLGWmIsqdwB4gDiJhp4OEMVJ1UAS0Z1zCLud65s5Fw/viewform",
     default => $to,
 };
 
-$items = [date("Y-m-d H:i:s"), $to];
+$items = [date("Y-m-d H:i:s"), $to, $from];
 
 if (!empty($input)) {
     $items[] = json_encode($input);
