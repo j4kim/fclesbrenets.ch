@@ -19,7 +19,7 @@ if (isset($input['from'])) {
 $url = match ($to) {
     'home' => "/",
     'inscription-2026' => "https://docs.google.com/forms/d/e/1FAIpQLSe_aajcQLGWmIsqdwB4gDiJhp4OEMVJ1UAS0Z1zCLud65s5Fw/viewform",
-    'sponsoring-2026' => "https://docs.google.com/forms/d/e/1FAIpQLSe_aajcQLGWmIsqdwB4gDiJhp4OEMVJ1UAS0Z1zCLud65s5Fw/viewform",
+    'sponsoring-2026' => "https://docs.google.com/forms/d/e/1FAIpQLSd2U0JIYajQPo55VNRjh38kyuWsSOaHxF_w78dZYui4emYuFw/viewform",
     default => $to,
 };
 
