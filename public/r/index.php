@@ -20,6 +20,7 @@ $url = match ($to) {
     'home' => "/",
     'inscription-2026' => "https://docs.google.com/forms/d/e/1FAIpQLSe_aajcQLGWmIsqdwB4gDiJhp4OEMVJ1UAS0Z1zCLud65s5Fw/viewform",
     'sponsoring-2026' => "https://docs.google.com/forms/d/e/1FAIpQLSd2U0JIYajQPo55VNRjh38kyuWsSOaHxF_w78dZYui4emYuFw/viewform",
+    'facture-sponsoring-2026' => 'https://fclesbrenets.ch/wordpress/wp-content/uploads/2026/04/facture-sponsoring-2026.pdf',
     default => $to,
 };
 
