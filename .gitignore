@@ -23,3 +23,5 @@ yarn-error.log*
 wordpress
 
 deployable
+
+.vscode/sftp.json
